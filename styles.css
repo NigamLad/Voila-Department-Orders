@@ -2,3 +2,20 @@ form {
     border: solid 1px black;
     height: 5em;
 }
+
+@page {
+    size: 8.5in 11in;
+}
+
+table {
+    border: solid 1px black;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td {
+    border: solid 1px black;
+    padding: 0.2em;
+}

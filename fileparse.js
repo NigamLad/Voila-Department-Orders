@@ -26,28 +26,36 @@ window.onload = function () {
 
 }
 
-
-
-
 function readCSV(file) {
-    console.log(file);
-
     // Check if the file is CSV format
     if (file.name.slice(file.name.length - 4, file.name.length) != ".csv") {
         console.log('File is not CSV format.');
     } else {
-        var read = new FileReader();
-        read.addEventListener('load', (event) => {
-            file.src = event.target.result;
-            console.log(event.target.result);
-        });
-        read.readAsDataURL(file);
-        read.onload = function(event){
+        var reader = new FileReader();
+        reader.readAsText(file);
+        reader.onload = function (event) {
             var csv = event.target.result;
-            console.log(csv);
-        }
+            var JSON = $.csv.toObjects(csv);
+            console.log(JSON);
+            var html = '';
+            
+            //Table Header
+            html += '<thead><tr>\r\n';
+            for(var key in Object.keys(JSON[0])){
+                html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+            }
+            html += '</tr></thead>\r\n';
+            //Table Content
+            for(var obj in JSON){
+                html += '<tr>\r\n';
+                for (var item in JSON[obj]) {
+                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                }
+                html += '</tr>\r\n';
+                console.log(JSON[obj]["Pick location"]);
+            }
+            $('#contents').html(html);
+        };
+        reader.onerror = function () { alert('Unable to read ' + file.fileName); };
     }
-
-
-
 }

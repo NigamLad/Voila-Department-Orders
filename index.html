@@ -2,6 +2,9 @@
     <head>
         <title>Voila Department Orders</title>
         <link rel = 'stylesheet' href = 'styles.css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "jquery-3.6.0.min.js"></script>
+        <script src = "jquery.csv.js"></script>
         <script src = "fileparse.js"></script>
     </head>
 
@@ -10,7 +13,19 @@
         <form id = 'drop-area'>
             <input type = 'file' id = 'file-selector' accept = ".csv">
         </form>
-        <p id = "test"></p>
+        <div>
+            <table id = contents>
+
+            </table>
+        </div>
+
+        <div id = "meat">
+            <h1>Meat</h1>
+        </div>
+
+        <div id = "produce">
+            <h1>Produce</h1>
+        </div>
     </body>
 
 </html>
