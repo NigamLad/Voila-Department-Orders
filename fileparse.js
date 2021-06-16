@@ -1,3 +1,6 @@
+var JSON;
+var desiredColumns = ["Description", "Pick location", "Ordered Qty"];
+
 window.onload = function () {
 
     var testElement = document.getElementById("test");
@@ -35,27 +38,106 @@ function readCSV(file) {
         reader.readAsText(file);
         reader.onload = function (event) {
             var csv = event.target.result;
-            var JSON = $.csv.toObjects(csv);
+            JSON = $.csv.toObjects(csv);
             console.log(JSON);
             var html = '';
-            
+
             //Table Header
             html += '<thead><tr>\r\n';
-            for(var key in Object.keys(JSON[0])){
-                html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+            for (var key in Object.keys(JSON[0])) {
+                if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+                    html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+                }
             }
             html += '</tr></thead>\r\n';
             //Table Content
-            for(var obj in JSON){
-                html += '<tr>\r\n';
-                for (var item in JSON[obj]) {
-                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+            for (var obj in JSON) {
+                //Only display 90-C pick orders
+                if (JSON[obj]["Pick location"].slice(0, 4) == "90-C") {
+                    html += '<tr>\r\n';
+                    for (var item in JSON[obj]) {
+                        if (desiredColumns.includes(item)) {
+                            html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                        }
+                    }
+                    html += '</tr>\r\n';
                 }
-                html += '</tr>\r\n';
-                console.log(JSON[obj]["Pick location"]);
             }
             $('#contents').html(html);
+            $('#contents').css("display", "block");
+            generateMeatReport();
+            generateProduceReport();
         };
         reader.onerror = function () { alert('Unable to read ' + file.fileName); };
     }
+}
+
+function generateMeatReport() {
+    var html = '';
+
+    //Table Header
+    html += '<thead><tr>\r\n';
+    for (var key in Object.keys(JSON[0])) {
+        if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+            html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+        }
+    }
+    html += '</tr></thead>\r\n';
+    //Table Content
+    for (var obj in JSON) {
+        console.log(JSON[obj]["Pick location"].includes(["Fresh Fruit"]) || JSON[obj]["Pick location"].includes(["Fresh Vegetables"]));
+        //Only display Meat Department pick orders
+        if (JSON[obj]["Pick location"].includes(["90-C"]) && (JSON[obj]["Pick location"].includes("Fresh Pork")
+            || JSON[obj]["Pick location"].includes("Fresh Beef")
+            || JSON[obj]["Pick location"].includes("Frsh Chicken/Fowl")
+            || JSON[obj]["Pick location"].includes("Meat Processed")
+            || JSON[obj]["Pick location"].includes("Seafood - Fresh"))
+        ) {
+            html += '<tr>\r\n';
+            for (var item in JSON[obj]) {
+                if (desiredColumns.includes(item)) {
+                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                }
+            }
+            html += '</tr>\r\n';
+        }
+    }
+
+    $('#meatTable').html(html);
+    $('#meatTable').css("display", "block");
+
+
+}
+
+function generateProduceReport() {
+    var html = '';
+
+    //Table Header
+    html += '<thead><tr>\r\n';
+    for (var key in Object.keys(JSON[0])) {
+        if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+            html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+        }
+    }
+    html += '</tr></thead>\r\n';
+    //Table Content
+    for (var obj in JSON) {
+        //Only display Meat Department pick orders
+        if (JSON[obj]["Pick location"].includes(["90-C"]) && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
+            || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
+        )) {
+            html += '<tr>\r\n';
+            for (var item in JSON[obj]) {
+                if (desiredColumns.includes(item)) {
+                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                }
+            }
+            html += '</tr>\r\n';
+        }
+    }
+
+    $('#produceTable').html(html);
+    $('#produceTable').css("display", "block");
+
+
 }
