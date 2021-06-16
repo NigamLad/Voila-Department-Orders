@@ -67,6 +67,7 @@ function readCSV(file) {
             $('#contents').css("display", "block");
             generateMeatReport();
             generateProduceReport();
+            generateDeliReport();
         };
         reader.onerror = function () { alert('Unable to read ' + file.fileName); };
     }
@@ -74,6 +75,7 @@ function readCSV(file) {
 
 function generateMeatReport() {
     var html = '';
+    var empty = true;
 
     //Table Header
     html += '<thead><tr>\r\n';
@@ -85,7 +87,6 @@ function generateMeatReport() {
     html += '</tr></thead>\r\n';
     //Table Content
     for (var obj in JSON) {
-        console.log(JSON[obj]["Pick location"].includes(["Fresh Fruit"]) || JSON[obj]["Pick location"].includes(["Fresh Vegetables"]));
         //Only display Meat Department pick orders
         if (JSON[obj]["Pick location"].includes(["90-C"]) && (JSON[obj]["Pick location"].includes("Fresh Pork")
             || JSON[obj]["Pick location"].includes("Fresh Beef")
@@ -100,17 +101,20 @@ function generateMeatReport() {
                 }
             }
             html += '</tr>\r\n';
+
+            empty = false;
         }
     }
 
-    $('#meatTable').html(html);
-    $('#meatTable').css("display", "block");
-
-
+    if (!empty) {
+        $('#meatTable').html(html);
+        $('#meat').css("display", "block");
+    }
 }
 
 function generateProduceReport() {
     var html = '';
+    var empty = true;
 
     //Table Header
     html += '<thead><tr>\r\n';
@@ -133,11 +137,56 @@ function generateProduceReport() {
                 }
             }
             html += '</tr>\r\n';
+
+            empty = false;
         }
     }
 
-    $('#produceTable').html(html);
-    $('#produceTable').css("display", "block");
+    if (!empty) {
+        $('#produceTable').html(html);
+        $('#produce').css("display", "block");
+    }
+}
+
+function generateDeliReport() {
+    var html = '';
+    var empty = true;
+
+    //Table Header
+    html += '<thead><tr>\r\n';
+    for (var key in Object.keys(JSON[0])) {
+        if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+            html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+        }
+    }
+    html += '</tr></thead>\r\n';
+    //Table Content
+    for (var obj in JSON) {
+        console.log("Test: " + JSON[obj]);
+        //Only display Meat Department pick orders
+        if (JSON[obj]["Pick location"].includes(["90-C"]) &&
+            (JSON[obj]["Pick location"].includes(["Deli"])
+            )) {
+            html += '<tr>\r\n';
+
+            for (var item in JSON[obj]) {
+                console.log("Item: ");
+                if (desiredColumns.includes(item)) {
+                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                }
+            }
+            html += '</tr>\r\n';
+
+            empty = false;
+        }
+    }
+
+    if (!empty) {
+        $('#deliTable').html(html);
+        $('#deli').css("display", "block");
+    }
+
+
 
 
 }
