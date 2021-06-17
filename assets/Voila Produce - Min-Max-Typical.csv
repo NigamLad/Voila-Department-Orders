@@ -1,0 +1,124 @@
+Article,PLU,Description,UOM,QTY per,Min Weight,Max Weight,Target Weight,Sub Article
+733888,3294,Apple Jazz 1X18.14KG,Each,3,0.62,0.68,0.66,450615
+162745,93072,Apple Pink Lady Organic 1X18.14KG,Each,1,0.62,0.68,0.66,N/A
+450615,3438,Apples Ambrosia 1X18.14KG,Each,3,0.62,0.68,0.66,733888
+156735,93438,Apples Ambrosia Organic 1X18.14KG,Each,3,0.54,0.68,0.6,N/A
+506550,3507,Apples Cosmic Crisp 1X18.14KG,Each,3,0.62,0.68,0.66,N/A
+834343,3616,Apples Envy 1X18.14KG,Each,3,0.62,0.68,0.66,457197
+9255,4129,Apples Fuji 1X18.14KG,Each,3,0.62,0.68,0.66,733888
+457197,4131,Apples Fuji Large 88s 1X18.14KG,Each,3,0.62,0.68,0.66,834343
+457213,4020,Apples Gold Del West Large 88s 1X18.14KG,Each,3,0.62,0.68,0.66,450615
+7610,4021,Apples Golden Del West 100 1X18.14KG,Each,3,0.62,0.68,0.66,457213
+7838,4017,Apples Granny Smith  Lg West 1X18.14KG,Each,3,0.62,0.68,0.66,457213
+417139,3283,Apples Honeycrisp 1X18.14KG,Each,3,0.56,0.78,0.69,N/A
+7549,4152,Apples McIntosh Small East 1X18.14KG,Each,3,0.45,0.51,0.48,N/A
+256244,4200,Apples Nicola 1X18.14 KG,Each,3,0.85,1.15,1,N/A
+457218,4130,Apples Pink Lady Large 88s 1X18.14KG,Each,3,0.62,0.68,0.66,457213
+74235,4016,Apples Red Delicious Lg Wst 1X18.14KG,Each,3,0.62,0.68,0.66,457213
+9250,4173,Apples Royal Gala 100 1X18.14KG,Each,3,0.62,0.68,0.66,N/A
+457198,4174,Apples Royal Gala Large 72-88s 1X18.14KG,Each,3,0.62,0.68,0.66,160128
+160128,94173,Apples Royal Gala Organic 1X18.14KG,Each,3,0.54,0.68,0.6,N/A
+9483,4177,Apples Spartan East Sm 1X18.14KG,Each,3,0.54,0.68,0.6,7549
+7644,4218,Apricots 1X11.34KG,Each,1,0.108,0.132,0.12,N/A
+457189,4407,Asian Yellow Pear 1X10KG,Each,3,0.83,0.94,0.9,7743
+8408,4080,Asparagus 1X5KG,Bunch,1,0.41,0.6,0.47,N/A
+39622,4544,Baby Bok Choy 1X4.54KG,Each,1,0.45,0.9,0.68,39624
+7350,94011,Bananas Organic 1X18.14KG,Bunch,1,0.9,1.27,1.09,7630
+8520,4235,Bananas Plantain 1X22.68KG,Bunch,1,0.3,1.1,0.7,7350
+7630,4011,Bananas Stage 4 1X18.14KG,Bunch,1,0.9,1.27,1.09,7350
+7911,4066,Beans Green 1X11.34KG,Each,1,0.45,0.9,0.68,N/A
+7915,4540,Beets Bulk 1X11.34KG,Each,1,0.65,1,0.89,N/A
+835044,12882,Beets Golden 1X11.34KG,Each,1,0.76,1,0.88,N/A
+8343,4545,Bok Choy 1X27.3KG,Each,1,0.85,1.13,1,39624
+39624,3163,Bok Choy Shanghai 1X19.6KG,Each,1,0.45,0.9,0.68,8343
+457207,4413,Bosc Pears Large 1X18.14KG,Each,3,0.62,0.68,0.66,N/A
+7481,3082,Broccoli Crowns 1X9.07KG,Each,1,0.15,0.36,0.22,N/A
+7925,4550,Brussels Sprouts 1X11.34KG,Each,1,0.26,0.43,0.34,N/A
+41762,3029,Bulk Seedless Mandarins 1X12.7KG,Each,1,0.15,0.2,0.18,366401
+7931,4069,Cabbage Green 1X22.7KG,Each,1,1.13,1.88,1.5,7933
+971612,4554,Cabbage Red 1X18.14KG,Each,1,0.81,1.01,0.91,N/A
+7933,4555,Cabbage Savoy 1X15.88KG,Each,1,0.7,0.85,0.79,7931
+144987,3214,Cabbage Sour 1X11.33KG,Each,1,0.81,1.01,0.91,N/A
+7945,4562,Carrots Bulk 1X22.72KG,Each,1,0.11,0.25,0.18,N/A
+8428,4585,Celery Root 1X9.07KG,Each,1,0.43,0.58,0.5,N/A
+2159,4258,Cherries Golden/Rainier 1X5KG,Bunch,1,0.4,0.6,0.5,N/A
+7645,4045,Cherries Red Black 1X8.16KG,Bunch,1,0.4,0.6,0.5,N/A
+7726,4450,Clementines 1X10KG,Each,1,0.15,0.2,0.18,N/A
+73001,4128,Cripps Pink Apple 100's 1X18.14KG,Each,3,0.62,0.68,0.66,7610
+7992,4081,Eggplant 1X10KG,Each,1,0.55,0.7,0.6,N/A
+8001,4608,Garlic Regular 1X10KG,Each,1,0.02,0.03,0.02,N/A
+8440,4612,Ginger Root 1X13.6KG,Each,1,0.15,0.45,0.3,N/A
+7572,4056,Grapes Black Seedless 1X8.61KG,Bunch,1,0.68,0.91,0.75,N/A
+7661,4022,Grapes Green Seedless 1X8.62KG,Bunch,1,0.87,1.15,1,445960
+9485,4636,Grapes Red Globe 1X8.62KG,Bunch,1,0.87,1.15,1,7664
+7664,4023,Grapes Red Seedless 1X8.62KG,Bunch,1,0.87,1.15,1,94273
+8444,4625,Horseradish Root 1X2.27KG,Each,1,0.11,0.25,0.18,N/A
+9922,4626,Jicama 1X9.07KG,Each,1,0.46,1.13,0.82,N/A
+161618,4630,Leeks 1X9.07KG,Each,1,0.31,0.46,0.38,N/A
+4269,4381,Moro Oranges Blood 1X8.16KG,Each,1,0.5,0.7,0.6,N/A
+366401,4055,Murcott Mandarins 1X10KG,Each,1,0.15,0.2,0.18,N/A
+267777,94085,Mushroom Org White Bulk 1X2.27KG,Each,1,0.1,0.3,0.2,267780
+267780,94648,Mushrooms Org Brown Bulk 1X2.27KG,Each,1,0.1,0.3,0.2,267777
+8358,4552,Napa Cabbage 1X27.3KG,Each,1,1.05,1.51,1.33,7931
+4378,4378,Nectarines Tree Ripe Large 1X8.16KG,Each,1,0.17,0.21,0.19,N/A
+456553,4166,Onion Other Sweet 1X18.14KG,Each,1,0.29,0.4,0.34,N/A
+8039,4093,Onions Large Spanish 1X22.68KG,Each,1,0.4,0.49,0.45,456553
+8038,4082,Onions Red 1X11.35KG,Each,1,0.25,0.46,0.35,N/A
+8101,4662,Onions Shallots 1X4.54KG,Each,1,0.15,0.2,0.18,N/A
+5528,4159,Onions Vidalia 1X18.14KG,Each,1,0.25,0.46,0.35,N/A
+145930,4163,Onions Walla Walla 1X18.14KG,Each,1,0.31,0.41,0.36,N/A
+8042,4663,Onions White 1X11.35KG,Each,1,0.25,0.46,0.35,8038
+8031,4665,Onions Yellow Small Bulk 1X22.7KG,Each,1,0.13,0.33,0.23,N/A
+450872,3110,Oranges Cara Cara Navel Red 1X15KG,Each,1,0.25,0.32,0.29,108092
+108092,4012,Oranges Navel Large West 1X18.14KG,Each,1,0.32,0.45,0.39,60334
+60334,3107,Oranges Navel Med 72/88s West 1X18.14KG,Each,1,0.21,0.25,0.23,108092
+445960,94022,Organic Grapes Green Seedless 1X8.16KG,Bunch,1,0.68,0.91,0.79,7661
+94273,94023,Organic Grapes Red Seedless 1X8.16KG,Bunch,1,0.68,0.91,0.79,7664
+189313,94036,Organic Nectarines 1X8.16KG,Each,1,0.17,0.21,0.19,4378
+189317,94044,Organic Peaches Tree Ripe 1X8.16KG,Each,1,0.17,0.21,0.19,4044
+834508,94657,Orgnc Mushrooms Portabella 1X2.27KG,,1,0.25,0.31,0.28,N/A
+72940,4672,Parsnip Bulk 1X11.34Kg,Each,1,0.35,0.55,0.45,N/A
+4044,4044,Peaches Tree Ripe Large 1X8.16KG,Each,1,0.17,0.21,0.19,4401
+4401,4401,Peaches White Flesh Large 1X8.16KG,Each,1,0.17,0.21,0.19,4044
+5651,4409,Pears Bartlett Large 1X18.14KG,Each,3,0.45,0.75,0.6,N/A
+145079,94409,Pears Bartlett Large Organic 1X19.95KG,Each,3,0.6,0.67,0.63,N/A
+7743,4416,Pears d Anjou 1X18.14KG,Each,3,0.54,0.6,0.57,N/A
+724417,4417,Pears D Anjou Red 1X10KG,Each,3,0.6,0.66,0.63,N/A
+167219,3118,Pears Starkrimson Red 1X9.75KG,Each,3,0.57,0.63,0.6,N/A
+36358,3120,Pepper Bell GHouse Green 1X5KG,Each,1,0.24,0.32,0.28,N/A
+8372,4693,Peppers Jalapeno Green Hot 1X4.54KG,Each,4,0.06,0.12,0.09,N/A
+7280,4088,Peppers Red Bell 1X11.34KG,Each,1,0.27,0.37,0.32,N/A
+44997,94088,Peppers Red Bell Organic 1X11.34KG,Each,1,0.22,0.3,0.26,N/A
+8060,4065,Peppers Sweet Bell Green Large 1X9.07KG,Each,2,0.25,0.47,0.35,36358
+8067,3121,Peppers Sweet Bell Orange 1X5KG,Each,2,0.5,0.55,0.53,8662
+8662,4688,Peppers Sweet Bell Red 1X5KG,Each,2,0.5,0.55,0.53,8067
+8063,4689,Peppers Sweet Bell Yellow 1X5KG,Each,2,0.5,0.55,0.53,8662
+4789,4040,Plums Black Large 1X12.7KG,Each,1,0.09,0.11,0.1,9741
+9741,4042,Plums Red Large 1X12.7KG,Each,1,0.09,0.11,0.1,4789
+179438,4442,Plums Yellow Lemon 1X7.25KG,Each,1,0.09,0.11,0.1,N/A
+8542,4726,Potatoes Long White 1X22.7KG,Each,1,0.82,1.1,0.95,N/A
+9788,4073,Potatoes Red 1X22.78KG,Each,1,0.22,0.35,0.28,131356
+4803,4725,Potatoes Russet 1X22.78KG,Each,1,0.24,0.3,0.28,131356
+8083,4091,Potatoes Sweet 1X18.14KG,Each,1,0.15,0.25,0.2,N/A
+131356,4083,Potatoes White 1X22.78KG,Each,1,0.24,0.3,0.28,4803
+17509,4727,Potatoes Yellow 1X22.78KG,Each,1,0.18,0.38,0.28,N/A
+144769,4664,Red Cluster Tomatoes on the Vine 1X5KG,Each,2,0.37,0.47,0.41,N/A
+313976,4074,Red Sweet Yams 1X9.08KG,Each,1,0.3,0.6,0.4,N/A
+8556,4745,Rhubarb 1X6.81KG,Each,1,0.26,0.35,0.3,N/A
+46119,4747,Rutabagas 1X22.68KG,Each,1,0.81,1.01,0.91,N/A
+588851,94776,Spaghetti Squash Organic 1X15.87KG,Each,1,2,3,2.66,N/A
+8122,4750,Squash Acorn 1X18.14KG,Each,1,0.7,0.85,0.79,139351
+8115,4758,Squash Buttercup 1X22.7KG,Each,1,0.79,1,0.9,139351
+139351,4759,Squash Butternut 1X18.14KG,Each,1,1.14,1.28,1.22,8122
+45275,94759,Squash Butternut Organic 1X15.88KG,Each,1,2,3,2.66,N/A
+145596,4769,Squash Kabocha 1X13.6KG,Each,1,0.89,1.21,1.05,N/A
+8566,4776,Squash Spaghetti 1X18.14KG,Each,1,1.3,1.4,1.36,139351
+8118,4067,Squash Zucchini 1X9.07KG,Each,2,0.37,0.44,0.41,8566
+724383,4383,Tangelos Minneola 1X18.16KG,Each,1,0.18,0.28,0.23,N/A
+285829,3151,Tomato Vine Ripe Large 1X9.26KG,Each,2,0.48,0.6,0.54,N/A
+8136,4799,Tomatoes Hothouse Large 1X6.81KG,Each,2,0.45,0.75,0.6,N/A
+8130,4087,Tomatoes Plum Roma 1X11.34KG,Each,2,0.26,0.35,0.3,8136
+213572,94664,Tomatoes Red Cluster Organic 5X1KG,Each,2,0.43,0.58,0.51,N/A
+145130,4811,Turnips Purple Top 1X11.3KG,Each,1,0.32,0.44,0.38,N/A
+130444,4816,Yams 1X18.14KG,Each,1,0.24,0.44,0.34,N/A
+493248,3209,Yams Purple 1X20KG,Each,1,0.3,0.6,0.4,N/A

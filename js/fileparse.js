@@ -1,5 +1,8 @@
 var JSON;
-var desiredColumns = ["Description", "Pick location", "Ordered Qty"];
+var meat_PLU_Data;
+var seafood_PLU_Data;
+var produce_PLU_Data;
+var desiredColumns = ["Description", "Pick location", "Ordered Qty", "SKU ID"];
 
 window.onload = function () {
 
@@ -25,6 +28,32 @@ window.onload = function () {
         event.preventDefault();
         var fileList = event.dataTransfer.files;
         readCSV(fileList[0]);
+    });
+
+    //Import PLU Data
+    $.ajax({
+        type: "GET",
+        url: "/assets/Voila Meat - Min-Max-Typical.csv",
+        dataType: "text",
+        success: function (data) {
+            meat_PLU_Data = $.csv.toObjects(data);
+        }
+    });
+    $.ajax({
+        type: "GET",
+        url: "/assets/Voila Seafood - Min-Max-Typical.csv",
+        dataType: "text",
+        success: function (data) {
+            seafood_PLU_Data = $.csv.toObjects(data);
+        }
+    });
+    $.ajax({
+        type: "GET",
+        url: "/assets/Voila Produce - Min-Max-Typical.csv",
+        dataType: "text",
+        success: function (data) {
+            produce_PLU_Data = $.csv.toObjects(data);
+        }
     });
 
 }
@@ -64,8 +93,9 @@ function readCSV(file) {
                 }
             }
             $('#contents').html(html);
-            $('#contents').css("display", "block");
+            $('#contents').css("display", "table");
             generateMeatReport();
+            generateSeafoodReport();
             generateProduceReport();
             generateDeliReport();
         };
@@ -84,6 +114,7 @@ function generateMeatReport() {
             html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
         }
     }
+    html += '<td>PLU</td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
     for (var obj in JSON) {
@@ -91,17 +122,24 @@ function generateMeatReport() {
         if (JSON[obj]["Pick location"].includes(["90-C"]) && (JSON[obj]["Pick location"].includes("Fresh Pork")
             || JSON[obj]["Pick location"].includes("Fresh Beef")
             || JSON[obj]["Pick location"].includes("Frsh Chicken/Fowl")
-            || JSON[obj]["Pick location"].includes("Meat Processed")
-            || JSON[obj]["Pick location"].includes("Seafood - Fresh"))
+            || JSON[obj]["Pick location"].includes("Meat Processed"))
         ) {
+            //Get PLU for current item
+            var PLU;
+            for (var item in meat_PLU_Data) {
+                if (meat_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+                    PLU = meat_PLU_Data[item].PLU;
+                }
+            }
+
             html += '<tr>\r\n';
             for (var item in JSON[obj]) {
                 if (desiredColumns.includes(item)) {
                     html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
             }
+            html += '<td>' + PLU + '</td>\r\n';
             html += '</tr>\r\n';
-
             empty = false;
         }
     }
@@ -109,6 +147,51 @@ function generateMeatReport() {
     if (!empty) {
         $('#meatTable').html(html);
         $('#meat').css("display", "block");
+    }
+}
+
+function generateSeafoodReport() {
+    var html = '';
+    var empty = true;
+
+    //Table Header
+    html += '<thead><tr>\r\n';
+    for (var key in Object.keys(JSON[0])) {
+        if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+            html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+        }
+    }
+    html += '<td>PLU</td>\r\n';
+    html += '</tr></thead>\r\n';
+    //Table Content
+    for (var obj in JSON) {
+        //Only display Meat Department pick orders
+        if (JSON[obj]["Pick location"].includes(["90-C"])
+            && JSON[obj]["Pick location"].includes("Seafood - Fresh")
+        ) {
+            //Get PLU for current item
+            var PLU;
+            for (var item in seafood_PLU_Data) {
+                if (seafood_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+                    PLU = seafood_PLU_Data[item].PLU;
+                }
+            }
+
+            html += '<tr>\r\n';
+            for (var item in JSON[obj]) {
+                if (desiredColumns.includes(item)) {
+                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                }
+            }
+            html += '<td>' + PLU + '</td>\r\n';
+            html += '</tr>\r\n';
+            empty = false;
+        }
+    }
+
+    if (!empty) {
+        $('#seafoodTable').html(html);
+        $('#seafood').css("display", "block");
     }
 }
 
@@ -123,21 +206,33 @@ function generateProduceReport() {
             html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
         }
     }
+    html += '<td>PLU</td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
     for (var obj in JSON) {
-        //Only display Meat Department pick orders
-        if (JSON[obj]["Pick location"].includes(["90-C"]) && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
-            || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
-        )) {
+        //Only display Produce Department pick orders
+        if (JSON[obj]["Pick location"].includes(["90-C"])
+            && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
+                || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
+            )) {
+            //Get PLU for current item
+            var PLU;
+            for (var item in produce_PLU_Data) {
+                if (produce_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+                    PLU = produce_PLU_Data[item].PLU;
+                }
+
+            }
+
             html += '<tr>\r\n';
             for (var item in JSON[obj]) {
                 if (desiredColumns.includes(item)) {
                     html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
             }
-            html += '</tr>\r\n';
 
+            html += '<td>' + PLU + '</td>\r\n';
+            html += '</tr>\r\n';
             empty = false;
         }
     }
@@ -159,11 +254,11 @@ function generateDeliReport() {
             html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
         }
     }
+    html += '<td>PLU</td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
     for (var obj in JSON) {
-        console.log("Test: " + JSON[obj]);
-        //Only display Meat Department pick orders
+        //Only display Deli Department pick orders
         if (JSON[obj]["Pick location"].includes(["90-C"]) &&
             (JSON[obj]["Pick location"].includes(["Deli"])
             )) {
