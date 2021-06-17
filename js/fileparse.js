@@ -33,7 +33,7 @@ window.onload = function () {
     //Import PLU Data
     $.ajax({
         type: "GET",
-        url: "/assets/Voila Meat - Min-Max-Typical.csv",
+        url: "/Voila-Department-Orders/assets/Voila Meat - Min-Max-Typical.csv",
         dataType: "text",
         success: function (data) {
             meat_PLU_Data = $.csv.toObjects(data);
@@ -41,7 +41,7 @@ window.onload = function () {
     });
     $.ajax({
         type: "GET",
-        url: "/assets/Voila Seafood - Min-Max-Typical.csv",
+        url: "/Voila-Department-Orders/assets/Voila Seafood - Min-Max-Typical.csv",
         dataType: "text",
         success: function (data) {
             seafood_PLU_Data = $.csv.toObjects(data);
@@ -49,7 +49,7 @@ window.onload = function () {
     });
     $.ajax({
         type: "GET",
-        url: "/assets/Voila Produce - Min-Max-Typical.csv",
+        url: "/Voila-Department-Orders/assets/Voila Produce - Min-Max-Typical.csv",
         dataType: "text",
         success: function (data) {
             produce_PLU_Data = $.csv.toObjects(data);
