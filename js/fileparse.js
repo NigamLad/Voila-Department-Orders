@@ -2,7 +2,8 @@ var JSON;
 var meat_PLU_Data;
 var seafood_PLU_Data;
 var produce_PLU_Data;
-var desiredColumns = ["Description", "Pick location", "Ordered Qty", "SKU ID"];
+var deli_PLU_Data;
+var desiredColumns = ["Description", "Ordered Qty"];
 
 window.onload = function () {
 
@@ -37,6 +38,16 @@ window.onload = function () {
         dataType: "text",
         success: function (data) {
             meat_PLU_Data = $.csv.toObjects(data);
+        },
+        error: function () {
+            $.ajax({
+                type: "GET",
+                url: "/assets/Voila Meat - Min-Max-Typical.csv",
+                dataType: "text",
+                success: function (data) {
+                    meat_PLU_Data = $.csv.toObjects(data);
+                }
+            });
         }
     });
     $.ajax({
@@ -45,6 +56,16 @@ window.onload = function () {
         dataType: "text",
         success: function (data) {
             seafood_PLU_Data = $.csv.toObjects(data);
+        },
+        error: function () {
+            $.ajax({
+                type: "GET",
+                url: "/assets/Voila Seafood - Min-Max-Typical.csv",
+                dataType: "text",
+                success: function (data) {
+                    seafood_PLU_Data = $.csv.toObjects(data);
+                }
+            });
         }
     });
     $.ajax({
@@ -53,6 +74,34 @@ window.onload = function () {
         dataType: "text",
         success: function (data) {
             produce_PLU_Data = $.csv.toObjects(data);
+        },
+        error: function () {
+            $.ajax({
+                type: "GET",
+                url: "/assets/Voila Produce - Min-Max-Typical.csv",
+                dataType: "text",
+                success: function (data) {
+                    produce_PLU_Data = $.csv.toObjects(data);
+                }
+            });
+        }
+    });
+    $.ajax({
+        type: "GET",
+        url: "/Voila-Department-Orders/assets/Voila Deli - Min-Max-Typical.csv",
+        dataType: "text",
+        success: function (data) {
+            deli_PLU_Data = $.csv.toObjects(data);
+        },
+        error: function () {
+            $.ajax({
+                type: "GET",
+                url: "/assets/Voila Deli - Min-Max-Typical.csv",
+                dataType: "text",
+                success: function (data) {
+                    deli_PLU_Data = $.csv.toObjects(data);
+                }
+            });
         }
     });
 
@@ -139,6 +188,7 @@ function generateMeatReport() {
                 }
             }
             html += '<td>' + PLU + '</td>\r\n';
+            html += '<td id = "checkBox"></td>\r\n';
             html += '</tr>\r\n';
             empty = false;
         }
@@ -184,6 +234,7 @@ function generateSeafoodReport() {
                 }
             }
             html += '<td>' + PLU + '</td>\r\n';
+            html += '<td id = "checkBox"></td>\r\n';
             html += '</tr>\r\n';
             empty = false;
         }
@@ -221,7 +272,6 @@ function generateProduceReport() {
                 if (produce_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
                     PLU = produce_PLU_Data[item].PLU;
                 }
-
             }
 
             html += '<tr>\r\n';
@@ -232,6 +282,7 @@ function generateProduceReport() {
             }
 
             html += '<td>' + PLU + '</td>\r\n';
+            html += '<td id = "checkBox"></td>\r\n';
             html += '</tr>\r\n';
             empty = false;
         }
@@ -262,6 +313,14 @@ function generateDeliReport() {
         if (JSON[obj]["Pick location"].includes(["90-C"]) &&
             (JSON[obj]["Pick location"].includes(["Deli"])
             )) {
+            //Get PLU for current item
+            var PLU;
+            for (var item in deli_PLU_Data) {
+                if (deli_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+                    PLU = deli_PLU_Data[item].PLU;
+                }
+            }
+
             html += '<tr>\r\n';
 
             for (var item in JSON[obj]) {
@@ -270,6 +329,8 @@ function generateDeliReport() {
                     html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
             }
+            html += '<td>' + PLU + '</td>\r\n';
+            html += '<td id = "checkBox"></td>\r\n';
             html += '</tr>\r\n';
 
             empty = false;

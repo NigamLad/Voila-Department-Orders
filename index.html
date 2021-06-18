@@ -1,51 +1,60 @@
 <html>
-    <head>
-        <title>Voila Department Orders</title>
-        <link rel = 'stylesheet' href = 'styles.css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src = "js/jquery-3.6.0.min.js"></script>
-        <script src = "js/jquery.csv.js"></script>
-        <script src = "js/fileparse.js"></script>
-    </head>
 
-    <body>
+<head>
+    <title>Voila Department Orders</title>
+    <link rel='stylesheet' href='styles.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.csv.js"></script>
+    <script src="js/fileparse.js"></script>
+</head>
+
+<body>
+    <section id = "inputArea">
         <h1>Insert a file</h1>
-        <form id = 'drop-area'>
-            <input type = 'file' id = 'file-selector' accept = ".csv">
+        <form id='drop-area'>
+            <input type='file' id='file-selector' accept=".csv">
         </form>
-        <div>
-            <table id = "contents" style = "display:none">
+    </section>
+
+
+    <section id = "dataPreview">
+        <table id="contents" style="display:none">
+
+        </table>
+    </section>
+
+    <section id="printContent">
+        <div id="meat" style="display:none">
+            <h1>Voila - Meat</h1>
+            <table id="meatTable">
 
             </table>
         </div>
 
-        <div id = "meat" style = "display:none">
-            <h1>Meat</h1>
-            <table id = "meatTable">
+        <div id="seafood" style="display:none">
+            <h1>Voila - Seafood</h1>
+            <table id="seafoodTable">
 
             </table>
         </div>
 
-        <div id = "seafood" style = "display:none">
-            <h1>Seafood</h1>
-            <table id = "seafoodTable">
+        <div id="produce" style="display:none">
+            <h1>Voila - Produce</h1>
+            <table id="produceTable">
 
             </table>
         </div>
 
-        <div id = "produce" style = "display:none">
-            <h1>Produce</h1>
-            <table id = "produceTable">
+        <div id="deli" style="display:none">
+            <h1>Voila - Deli</h1>
+            <table id="deliTable">
 
             </table>
         </div>
+    </section>
 
-        <div id = "deli" style = "display:none">
-            <h1>Deli</h1>
-            <table id = "deliTable">
 
-            </table>
-        </div>
-    </body>
+</body>
 
 </html>

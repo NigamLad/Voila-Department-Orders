@@ -1,21 +1,58 @@
+body {
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 24px;
+}
+
+div h1 {
+    margin: auto;
+    width: 75%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+div {
+    vertical-align: middle;
+    
+}
+
 form {
     border: solid 1px black;
     height: 5em;
 }
 
-@page {
-    size: 8.5in 11in;
-}
-
 table {
     border: solid 1px black;
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
 }
 
 thead {
     font-weight: bold;
+    font-size: 18px;
 }
 
 td {
     border: solid 1px black;
-    padding: 0.2em;
+    padding: 0.5em;
+    font-size: 16px;
+}
+
+#checkBox {
+    width: 1em;
+    height: 1em;
+}
+
+@media print {
+    #printContents {
+        width: 100%;
+    }
+
+    #inputArea, #dataPreview{
+        display: none;
+    }
+
+    #meat, #seafood, #produce, #deli{
+        page-break-after:always;
+    }
 }
