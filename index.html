@@ -2,6 +2,7 @@
 
 <head>
     <title>Voila Department Orders</title>
+    <link rel='stylesheet' href='/styles.css'>
     <link rel='stylesheet' href='/Voila-Department-Orders/styles.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -9,10 +10,10 @@
     <script src="js/fileparse.js"></script>
 </head>
 
-<body>
+<body id='drop-area'>
     <section id = "inputArea">
         <h1>Insert a file</h1>
-        <form id='drop-area'>
+        <form id = 'fileInput'>
             <input type='file' id='file-selector' accept=".csv">
         </form>
     </section>
@@ -49,6 +50,13 @@
         <div id="deli" style="display:none">
             <h1>Voila - Deli</h1>
             <table id="deliTable">
+
+            </table>
+        </div>
+
+        <div id="bakery" style="display:none">
+            <h1>Voila - Bakery</h1>
+            <table id="bakeryTable">
 
             </table>
         </div>

@@ -7,8 +7,6 @@ var desiredColumns = ["Description", "Ordered Qty"];
 
 window.onload = function () {
 
-    var testElement = document.getElementById("test");
-
     //File Upload and Read
     var fileSelector = document.getElementById("file-selector");
     fileSelector.addEventListener('change', (event) => {
@@ -131,7 +129,8 @@ function readCSV(file) {
             //Table Content
             for (var obj in JSON) {
                 //Only display 90-C pick orders
-                if (JSON[obj]["Pick location"].slice(0, 4) == "90-C") {
+                if (JSON[obj]["Pick location"].slice(0, 4) == "90-C"
+                    || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Brd and Rolls"])) {
                     html += '<tr>\r\n';
                     for (var item in JSON[obj]) {
                         if (desiredColumns.includes(item)) {
@@ -147,6 +146,7 @@ function readCSV(file) {
             generateSeafoodReport();
             generateProduceReport();
             generateDeliReport();
+            generateBakeryReport();
         };
         reader.onerror = function () { alert('Unable to read ' + file.fileName); };
     }
@@ -164,6 +164,7 @@ function generateMeatReport() {
         }
     }
     html += '<td>PLU</td>\r\n';
+    html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15">'</td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
     for (var obj in JSON) {
@@ -212,6 +213,7 @@ function generateSeafoodReport() {
         }
     }
     html += '<td>PLU</td>\r\n';
+    html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
     for (var obj in JSON) {
@@ -258,6 +260,7 @@ function generateProduceReport() {
         }
     }
     html += '<td>PLU</td>\r\n';
+    html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
     for (var obj in JSON) {
@@ -306,6 +309,7 @@ function generateDeliReport() {
         }
     }
     html += '<td>PLU</td>\r\n';
+    html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
     for (var obj in JSON) {
@@ -341,8 +345,52 @@ function generateDeliReport() {
         $('#deliTable').html(html);
         $('#deli').css("display", "block");
     }
+}
 
+function generateBakeryReport() {
+    var html = '';
+    var empty = true;
 
+    //Table Header
+    html += '<thead><tr>\r\n';
+    for (var key in Object.keys(JSON[0])) {
+        if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+            html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+        }
+    }
+    //html += '<td>PLU</td>\r\n';
+    html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
+    html += '</tr></thead>\r\n';
+    //Table Content
+    for (var obj in JSON) {
+        //Only display Bakery Department pick orders
+        if (JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Brd and Rolls"])) {
+            // //Get PLU for current item
+            // var PLU;
+            // for (var item in deli_PLU_Data) {
+            //     if (deli_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+            //         PLU = deli_PLU_Data[item].PLU;
+            //     }
+            // }
 
+            html += '<tr>\r\n';
 
+            for (var item in JSON[obj]) {
+                console.log("Item: ");
+                if (desiredColumns.includes(item)) {
+                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                }
+            }
+            //html += '<td>' + PLU + '</td>\r\n';
+            html += '<td id = "checkBox"></td>\r\n';
+            html += '</tr>\r\n';
+
+            empty = false;
+        }
+    }
+
+    if (!empty) {
+        $('#bakeryTable').html(html);
+        $('#bakery').css("display", "block");
+    }
 }

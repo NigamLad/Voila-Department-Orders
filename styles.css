@@ -3,6 +3,10 @@ body {
     font-size: 24px;
 }
 
+#fileInput {
+    position: relative;
+}
+
 div h1 {
     margin: auto;
     width: 75%;
@@ -12,12 +16,6 @@ div h1 {
 
 div {
     vertical-align: middle;
-    
-}
-
-form {
-    border: solid 1px black;
-    height: 5em;
 }
 
 table {
@@ -52,7 +50,7 @@ td {
         display: none;
     }
 
-    #meat, #seafood, #produce, #deli{
+    #meat, #seafood, #produce, #deli, #bakery{
         page-break-after:always;
     }
 }
