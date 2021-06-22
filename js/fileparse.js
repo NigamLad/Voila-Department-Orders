@@ -164,7 +164,7 @@ function generateMeatReport() {
         }
     }
     html += '<td>PLU</td>\r\n';
-    html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15">'</td>\r\n';
+    html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
     for (var obj in JSON) {
