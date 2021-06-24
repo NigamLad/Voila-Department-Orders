@@ -5,11 +5,12 @@ var produce_PLU_Data;
 var deli_PLU_Data;
 var desiredColumns = ["Description", "Ordered Qty"];
 
-window.onload = function () {
-
+$(window).on('load', function(){
     //File Upload and Read
     var fileSelector = document.getElementById("file-selector");
     fileSelector.addEventListener('change', (event) => {
+        $("table").empty();
+        $('.tableContent').css("display", "none");
         var fileList = event.target.files;
         readCSV(fileList[0]);
     })
@@ -21,10 +22,13 @@ window.onload = function () {
         event.preventDefault();
         event.dataTransfer.dropEffect = 'copy';
     });
+
     //Drag Drop event
     dropArea.addEventListener('drop', (event) => {
         event.stopPropagation();
         event.preventDefault();
+        $("table").empty();
+        $('.tableContent').css("display", "none");
         var fileList = event.dataTransfer.files;
         readCSV(fileList[0]);
     });
@@ -103,7 +107,7 @@ window.onload = function () {
         }
     });
 
-}
+})
 
 function readCSV(file) {
     // Check if the file is CSV format
@@ -128,9 +132,10 @@ function readCSV(file) {
             html += '</tr></thead>\r\n';
             //Table Content
             for (var obj in JSON) {
-                //Only display 90-C pick orders
+                //Only display 90-C pick orders and Department specific picks
                 if (JSON[obj]["Pick location"].slice(0, 4) == "90-C"
-                    || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Brd and Rolls"])) {
+                    || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Brd and Rolls"])
+                    || JSON[obj]["Pick location"].includes(["80-L-00-00-Bento Sushi"])) {
                     html += '<tr>\r\n';
                     for (var item in JSON[obj]) {
                         if (desiredColumns.includes(item)) {
@@ -141,12 +146,13 @@ function readCSV(file) {
                 }
             }
             $('#contents').html(html);
-            $('#contents').css("display", "table");
+            $('#allData').css("display", "block");
             generateMeatReport();
             generateSeafoodReport();
             generateProduceReport();
             generateDeliReport();
             generateBakeryReport();
+            generateSushiReport();
         };
         reader.onerror = function () { alert('Unable to read ' + file.fileName); };
     }
@@ -169,10 +175,12 @@ function generateMeatReport() {
     //Table Content
     for (var obj in JSON) {
         //Only display Meat Department pick orders
-        if (JSON[obj]["Pick location"].includes(["90-C"]) && (JSON[obj]["Pick location"].includes("Fresh Pork")
-            || JSON[obj]["Pick location"].includes("Fresh Beef")
-            || JSON[obj]["Pick location"].includes("Frsh Chicken/Fowl")
-            || JSON[obj]["Pick location"].includes("Meat Processed"))
+        if (JSON[obj]["Pick location"].includes(["90-C"]) &&
+            (JSON[obj]["Pick location"].includes("Fresh Pork")
+                || JSON[obj]["Pick location"].includes("Fresh Beef")
+                || JSON[obj]["Pick location"].includes("Frsh Chicken/Fowl")
+                || JSON[obj]["Pick location"].includes("Meat Processed")
+                || JSON[obj]["Pick location"].includes("Fresh Turkey"))
         ) {
             //Get PLU for current item
             var PLU;
@@ -328,7 +336,6 @@ function generateDeliReport() {
             html += '<tr>\r\n';
 
             for (var item in JSON[obj]) {
-                console.log("Item: ");
                 if (desiredColumns.includes(item)) {
                     html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
@@ -376,7 +383,6 @@ function generateBakeryReport() {
             html += '<tr>\r\n';
 
             for (var item in JSON[obj]) {
-                console.log("Item: ");
                 if (desiredColumns.includes(item)) {
                     html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
@@ -392,5 +398,52 @@ function generateBakeryReport() {
     if (!empty) {
         $('#bakeryTable').html(html);
         $('#bakery').css("display", "block");
+    }
+}
+
+function generateSushiReport() {
+    var html = '';
+    var empty = true;
+
+    //Table Header
+    html += '<thead><tr>\r\n';
+    for (var key in Object.keys(JSON[0])) {
+        if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+            html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+        }
+    }
+    //html += '<td>PLU</td>\r\n';
+    html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
+    html += '</tr></thead>\r\n';
+    //Table Content
+    for (var obj in JSON) {
+        //Only display Sushi Department pick orders
+        if (JSON[obj]["Pick location"].includes(["80-L-00-00-Bento Sushi"])) {
+            // //Get PLU for current item
+            // var PLU;
+            // for (var item in deli_PLU_Data) {
+            //     if (deli_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+            //         PLU = deli_PLU_Data[item].PLU;
+            //     }
+            // }
+
+            html += '<tr>\r\n';
+
+            for (var item in JSON[obj]) {
+                if (desiredColumns.includes(item)) {
+                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                }
+            }
+            //html += '<td>' + PLU + '</td>\r\n';
+            html += '<td id = "checkBox"></td>\r\n';
+            html += '</tr>\r\n';
+
+            empty = false;
+        }
+    }
+
+    if (!empty) {
+        $('#sushiTable').html(html);
+        $('#sushi').css("display", "block");
     }
 }

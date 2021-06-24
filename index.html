@@ -8,61 +8,90 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.csv.js"></script>
     <script src="js/fileparse.js"></script>
+    <!-- <script src="js/collapse.js"></script> -->
 </head>
 
 <body id='drop-area'>
-    <section id = "inputArea">
+    <section id="inputArea">
         <h1>Insert a file</h1>
-        <form id = 'fileInput'>
+        <form id='fileInput'>
             <input type='file' id='file-selector' accept=".csv">
         </form>
     </section>
 
+    <section id="dataPreview">
+        <div class="tableContent" id="allData" style="display:none">
+            <button class="collapsible">All Orders</button>
+            <div class="content">
+                <table id="contents">
 
-    <section id = "dataPreview">
-        <table id="contents" style="display:none">
+                </table>
+            </div>
 
-        </table>
+        </div>
     </section>
 
     <section id="printContent">
-        <div id="meat" style="display:none">
-            <h1>Voila - Meat</h1>
-            <table id="meatTable">
+        <div class="tableContent" id="meat" style="display:none">
+            <button class="collapsible active">Voila - Meat</button>
+            <div class="content">
+                <table id="meatTable">
 
-            </table>
+                </table>
+            </div>
+
         </div>
 
-        <div id="seafood" style="display:none">
-            <h1>Voila - Seafood</h1>
-            <table id="seafoodTable">
+        <div class="tableContent" id="seafood" style="display:none">
+            <button class="collapsible active">Voila - Seafood</button>
+            <div class="content">
+                <table id="seafoodTable">
 
-            </table>
+                </table>
+            </div>
+
         </div>
 
-        <div id="produce" style="display:none">
-            <h1>Voila - Produce</h1>
-            <table id="produceTable">
+        <div class="tableContent" id="produce" style="display:none">
+            <button class="collapsible active">Voila - Produce</button>
+            <div class="content">
+                <table id="produceTable">
 
-            </table>
+                </table>
+            </div>
+
         </div>
 
-        <div id="deli" style="display:none">
-            <h1>Voila - Deli</h1>
-            <table id="deliTable">
+        <div class="tableContent" id="deli" style="display:none">
+            <button class="collapsible active">Voila - Deli</button>
+            <div class="content">
+                <table id="deliTable">
 
-            </table>
+                </table>
+            </div>
+
         </div>
 
-        <div id="bakery" style="display:none">
-            <h1>Voila - Bakery</h1>
-            <table id="bakeryTable">
+        <div class="tableContent" id="bakery" style="display:none">
+            <button class="collapsible active">Voila - Bakery</button>
+            <div class="content">
+                <table id="bakeryTable">
 
-            </table>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="tableContent" id="sushi" style="display:none">
+            <button class="collapsible active">Voila - Sushi</button>
+            <div class="content">
+                <table id="sushiTable">
+
+                </table>
+            </div>
+
         </div>
     </section>
-
-
 </body>
 
 </html>

@@ -41,6 +41,29 @@ td {
     height: 1em;
 }
 
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 0.5em;
+    border: none;
+    text-align: left;
+    font-size: 1.5em;
+    width: 80%;
+    margin:auto;
+    font-family: Source Sans Pro,sans-serif;
+    display:block;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
 @media print {
     #printContents {
         width: 100%;
@@ -50,7 +73,7 @@ td {
         display: none;
     }
 
-    #meat, #seafood, #produce, #deli, #bakery{
+    #meat, #seafood, #produce, #deli, #bakery, #sushi{
         page-break-after:always;
     }
 }
