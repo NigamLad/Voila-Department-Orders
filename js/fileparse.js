@@ -227,7 +227,7 @@ function generateSeafoodReport() {
     for (var obj in JSON) {
         //Only display Meat Department pick orders
         if (JSON[obj]["Pick location"].includes(["90-C"])
-            && JSON[obj]["Pick location"].includes("Seafood - Fresh")
+            && JSON[obj]["Pick location"].includes("Seafood Fresh")
         ) {
             //Get PLU for current item
             var PLU;
