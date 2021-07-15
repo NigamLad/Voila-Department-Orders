@@ -1,6 +1,55 @@
 body {
-    font-family: Source Sans Pro,sans-serif;
+    font-family: 'Segoe UI';
     font-size: 24px;
+    margin: 0;
+    background-color: #e5e1db;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    font-size: 2em;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    ;
+    background-color: #a6a090;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2em;
+}
+
+h4 {
+    border-right: solid black 3px;
+    padding-right: 2em;
+}
+
+h6 {
+    padding-right: 1em;
+}
+
+#currentNav {
+    text-decoration: underline;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+#inputArea {
+    padding-left: 1em;
 }
 
 #fileInput {
@@ -41,8 +90,8 @@ td {
     height: 1em;
 }
 
-.collapsible {
-    background-color: #777;
+/* .collapsible {
+    background-color: #424242;
     color: white;
     cursor: pointer;
     padding: 0.5em;
@@ -51,7 +100,6 @@ td {
     font-size: 1.5em;
     width: 80%;
     margin:auto;
-    font-family: Source Sans Pro,sans-serif;
     display:block;
 }
 
@@ -62,18 +110,56 @@ td {
 .content {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+} 
+*/
+
+.tableHeader {
+    display: block;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    margin: auto;
+    border: none;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.collapsible {
+    display: block;
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    margin: auto;
+    border: none;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
 }
 
 @media print {
     #printContents {
         width: 100%;
     }
-
-    #inputArea, #dataPreview{
+    #inputArea, #dataPreview, header {
         display: none;
     }
+    #meat, #seafood, #produce, #deli, #bakery, #sushi, #invoice {
+        page-break-after: always;
+    }
 
-    #meat, #seafood, #produce, #deli, #bakery, #sushi{
-        page-break-after:always;
+    .content{
+        display: block !important;
     }
 }

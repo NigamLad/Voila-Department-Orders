@@ -8,10 +8,19 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.csv.js"></script>
     <script src="js/fileparse.js"></script>
-    <!-- <script src="js/collapse.js"></script> -->
+    <script src="js/collapse.js"></script>
 </head>
 
 <body id='drop-area'>
+
+    <header>
+        <h4>Safeway Tools</h4>
+        <section class = "navbar">
+            <a id = "currentNav"><h6>Voila Department Orders</h6></a>
+            <a href = '/unmatchedVendorEntry.html'><h6>Unmatched Vendor Entry</h6></a>
+        </section>
+    </header>
+
     <section id="inputArea">
         <h1>Insert a file</h1>
         <form id='fileInput'>
@@ -27,69 +36,62 @@
 
                 </table>
             </div>
-
         </div>
     </section>
 
     <section id="printContent">
         <div class="tableContent" id="meat" style="display:none">
-            <button class="collapsible active">Voila - Meat</button>
+            <button class="collapsible">Voila - Meat</button>
             <div class="content">
                 <table id="meatTable">
 
                 </table>
             </div>
-
         </div>
 
         <div class="tableContent" id="seafood" style="display:none">
-            <button class="collapsible active">Voila - Seafood</button>
+            <button class="collapsible">Voila - Seafood</button>
             <div class="content">
                 <table id="seafoodTable">
 
                 </table>
             </div>
-
         </div>
 
         <div class="tableContent" id="produce" style="display:none">
-            <button class="collapsible active">Voila - Produce</button>
+            <button class="collapsible">Voila - Produce</button>
             <div class="content">
                 <table id="produceTable">
 
                 </table>
             </div>
-
         </div>
 
         <div class="tableContent" id="deli" style="display:none">
-            <button class="collapsible active">Voila - Deli</button>
+            <button class="collapsible">Voila - Deli</button>
             <div class="content">
                 <table id="deliTable">
 
                 </table>
             </div>
-
         </div>
 
         <div class="tableContent" id="bakery" style="display:none">
-            <button class="collapsible active">Voila - Bakery</button>
+            <button class="collapsible">Voila - Bakery</button>
             <div class="content">
                 <table id="bakeryTable">
 
                 </table>
             </div>
-
         </div>
 
         <div class="tableContent" id="sushi" style="display:none">
-            <button class="collapsible active">Voila - Sushi</button>
+            <button class="collapsible">Voila - Sushi</button>
             <div class="content">
                 <table id="sushiTable">
 
                 </table>
             </div>
-
         </div>
     </section>
 </body>

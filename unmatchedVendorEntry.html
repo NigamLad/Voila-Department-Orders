@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Voila Department Orders</title>
+    <link rel='stylesheet' href='/styles.css'>
+    <link rel='stylesheet' href='/Voila-Department-Orders/styles.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.csv.js"></script>
+    <script src="js/UVE_Fileparse.js"></script>
+</head>
+
+<body id='drop-area'>
+
+    <header>
+        <h4>Safeway Tools</h4>
+        <section class = "navbar">
+            <a href = '/index.html'><h6>Voila Department Orders</h6></a>
+            <a id = "currentNav"><h6>Unmatched Vendor Entry</h6></a>
+        </section>
+    </header>
+
+    <section id="inputArea">
+        <h1>Insert a file</h1>
+        <form id='fileInput'>
+            <input type='file' id='file-selector' accept=".csv">
+        </form>
+    </section>
+
+    <section id="printContent">
+        <div class="tableContent" id="invoice" style="display:none">
+            <button class="tableHeader">Unmatched Invoices</button>
+            <div>
+                <table id="contents">
+
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
