@@ -185,7 +185,7 @@ function generateMeatReport() {
             //Get PLU for current item
             var PLU;
             for (var item in meat_PLU_Data) {
-                if (meat_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+                if (meat_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
                     PLU = meat_PLU_Data[item].PLU;
                 }
             }
@@ -232,7 +232,7 @@ function generateSeafoodReport() {
             //Get PLU for current item
             var PLU;
             for (var item in seafood_PLU_Data) {
-                if (seafood_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+                if (seafood_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
                     PLU = seafood_PLU_Data[item].PLU;
                 }
             }
@@ -280,7 +280,7 @@ function generateProduceReport() {
             //Get PLU for current item
             var PLU;
             for (var item in produce_PLU_Data) {
-                if (produce_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+                if (produce_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
                     PLU = produce_PLU_Data[item].PLU;
                 }
             }
@@ -328,7 +328,7 @@ function generateDeliReport() {
             //Get PLU for current item
             var PLU;
             for (var item in deli_PLU_Data) {
-                if (deli_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+                if (deli_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
                     PLU = deli_PLU_Data[item].PLU;
                 }
             }
@@ -375,7 +375,7 @@ function generateBakeryReport() {
             // //Get PLU for current item
             // var PLU;
             // for (var item in deli_PLU_Data) {
-            //     if (deli_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+            //     if (deli_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
             //         PLU = deli_PLU_Data[item].PLU;
             //     }
             // }
@@ -422,7 +422,7 @@ function generateSushiReport() {
             // //Get PLU for current item
             // var PLU;
             // for (var item in deli_PLU_Data) {
-            //     if (deli_PLU_Data[item].Article == JSON[obj]["SKU ID"].slice(0, JSON[obj]["SKU ID"].length - 2)) {
+            //     if (deli_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
             //         PLU = deli_PLU_Data[item].PLU;
             //     }
             // }
