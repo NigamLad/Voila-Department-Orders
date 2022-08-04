@@ -1,0 +1,10 @@
+Shipment,Order,Product,Description,Regime,Status,Container,Container location,Pick location,Ordered Qty,Picked Qty,Subst Sku,Subst Desc,Subst Qty,SKU ID,SKU description
+12:00 - 00025393,1432297546067,7945KG,Carrots Bulk 1X22.72KG 0.180kg,Ambient,NotAssigned,'-,'-,90-C-00-00-Fresh Vegetables,2,0,'-,'-,'-,7945KG,Carrots Bulk 1X22.72KG 0.180kg
+13:00 - 00025397,1405919573947,8038KG,Onions Red 1X11.35KG 0.350kg,Ambient,NotAssigned,'-,'-,90-C-00-00-Fresh Vegetables,1,0,'-,'-,'-,8038KG,Onions Red 1X11.35KG 0.350kg
+13:00 - 00025397,1405919573947,7630KG,Bananas Stage 4 1X18.14KG 1.082kg,Ambient,NotAssigned,'-,'-,90-C-00-00-Fresh Fruit,1,0,'-,'-,'-,7630KG,Bananas Stage 4 1X18.14KG 1.082kg
+13:00 - 00025397,1405919573947,340853KG,Comp Chicken Brst B/L S/L 12ctn 1X4.8KG 0.450kg,Chill,NotAssigned,'-,'-,90-C-00-00-Frsh Chicken/Fowl,3,0,'-,'-,'-,340853KG,Comp Chicken Brst B/L S/L 12ctn 1X4.8KG 0.450kg
+11:00 - 00025402,1266480795842,131356KG,Potatoes White 1X22.78KG 0.270kg,Ambient,NotAssigned,'-,'-,90-C-00-00-Fresh Vegetables,5,0,'-,'-,'-,131356KG,Potatoes White 1X22.78KG 0.270kg
+09:00 - 00025377,1330664715999,151395KG,OW Icelandic Cod Fillet PF 1X1KG 0.284kg,Chill,NotAssigned,'-,'-,90-C-00-00-Seafood Fresh / Refreshed Fin-Fish,3,0,'-,'-,'-,151395KG,OW Icelandic Cod Fillet PF 1X1KG 0.284kg
+09:00 - 00025377,1330664715999,44239KG,FS SterlSil Striploin Steak Bnls 1X1KG 0.658kg,Chill,NotAssigned,'-,'-,90-C-00-00-Fresh Beef,2,0,'-,'-,'-,44239KG,FS SterlSil Striploin Steak Bnls 1X1KG 0.658kg
+09:00 - 00025377,1330664715999,149835KG,FS Strip Loin Grilling Steak Bnls 1X1KG 0.628kg,Chill,NotAssigned,'-,'-,90-C-00-00-Fresh Beef,4,0,'-,'-,'-,149835KG,FS Strip Loin Grilling Steak Bnls 1X1KG 0.628kg
+09:00 - 00025377,1330664715999,731568KG,SterlSil Strip Loin Grilling Steak 1X1KG 0.320kg,Chill,NotAssigned,'-,'-,90-C-00-00-Fresh Beef,3,0,'-,'-,'-,731568KG,SterlSil Strip Loin Grilling Steak 1X1KG 0.320kg

@@ -1,14 +1,17 @@
 <html>
 
 <head>
-    <title>Voila Department Orders</title>
+    <title>weeklySalesReport</title>
     <link rel='stylesheet' href='/styles.css'>
     <link rel='stylesheet' href='/Voila-Department-Orders/styles.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.csv.js"></script>
-    <script src="js/fileparse.js"></script>
+    <script src="js/pdfParse.js"></script>
     <script src="js/collapse.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/1.10.100/pdf.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.entry.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/1.10.100/pdf.worker.min.js" ></script>
 </head>
 
 <body id='drop-area'>
@@ -16,16 +19,16 @@
     <header>
         <h4>Safeway Tools</h4>
         <section class = "navbar">
-            <a id = "currentNav"><h6>Voila Department Orders</h6></a>
+            <a href = '/Voila-Department-Orders'><h6>Voila Department Orders</h6></a>
             <a href = '/Voila-Department-Orders/unmatchedVendorEntry.html'><h6>Unmatched Vendor Entry</h6></a>
-            <a href = '/Voila-Department-Orders/weeklySalesReport.html'><h6>Weekly Sales Report</h6></a>
+            <a id = "currentNav"><h6>Weekly Sales Report</h6></a>
         </section>
     </header>
 
     <section id="inputArea">
         <h1>Insert a file</h1>
         <form id='fileInput'>
-            <input type='file' id='file-selector' accept=".csv">
+            <input type='file' id='file-selector' accept=".pdf">
         </form>
     </section>
 
