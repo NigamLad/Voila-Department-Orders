@@ -371,7 +371,9 @@ function generateBakeryReport() {
     //Table Content
     for (var obj in JSON) {
         //Only display Bakery Department pick orders
-        if (JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Brd and Rolls"])) {
+        if (JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Brd and Rolls"])
+         || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Croissant"])
+         || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Swt Treats"])) {
             // //Get PLU for current item
             // var PLU;
             // for (var item in deli_PLU_Data) {
