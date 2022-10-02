@@ -1,0 +1,140 @@
+Article,Article Description,PLU,Min Weight(g),Max Weight(g),Target Weight(g),Sub PLU 1,Sub PLU 2,Sub PLU 3
+1002505,Agro Chevalier Triple Brie 2X650G,26074,0.14,0.18,0.16,26088,16021,-
+82463,Agropur L Extra Brie Cheese 1X2.7KG,16094,0.15,0.19,0.17,26088,-,-
+1000145,Agropur L Extra Double Creme Brie 1X3KG,26088,0.16,0.2,0.18,16021,-,-
+881300,Ambro Chs Grated Parm Rgno 24Mo 1X1KG,88294,0.12,0.14,0.13,71167,65389,75244
+881318,Ambro Chs Shredded Parm Regno 24Mo 1X1KG,65492,0.1,0.12,0.11,-,-,-
+859610,Ambrosi Chs Grana Padano 1/8 15M 2X4KG,71168,0.17,0.21,0.19,65389,71167,-
+859355,Ambrosi Parm Rggno 24Mnth 1/4 1X8KG,65389,0.17,0.21,0.19,68085,-,-
+859300,Ambrosi Parmigiano Reggiano 24MWh 1X33KG,71167,0.18,0.22,0.2,-,-,-
+860002,Ambrosi Pecorino Romano 5 Mnth 1/8 4X4KG,25369,0.15,0.19,0.17,21438,48722,28666
+847056,Anco Cheese Havarti Creamy 1X4KG,16123,0.12,0.16,0.14,-,-,-
+849170,Arla Chs Shredded Parm Regno 24Mo 1X1KG,75244,0.1,0.12,0.11,-,-,-
+588327,Beemster Truffle Wheel 1X5KG,17594,0.14,0.18,0.16,-,-,-
+150817,Blk Forest Ham Shingle Pack 12ct 1X2.4KG,25742,0.18,0.22,0.2,-,-,-
+138905,Brandt Beerwurst Sausage 2X1.85KG,25713,0.19,0.23,0.21,-,-,-
+130614,Brandt Kolbassa Loaf 2X1.625KG,15639,0.19,0.23,0.21,20967,-,-
+1000607,Burns Pepperoni 3X2.2KG,45641,0.19,0.23,0.21,-,-,-
+1001479,Burns Salami RW 3X2.2KG,45640,0.2,0.24,0.22,-,-,-
+492809,Cambozol Cheese Imported 1X2.2KG,45443,0.13,0.17,0.15,65272,65446,-
+296369,Castello Blue Cheese Wheel Tradl 1X3KG,65272,0.13,0.15,0.14,53619,-,-
+1001326,Castello Fontina Cheese 1X4.5KG,26128,0.14,0.2,0.17,-,-,-
+485167,CmbeCast Wensleydale Chs B/Berries 2X1KG,45417,0.1,0.12,0.11,45410,-,-
+484884,CmbeCast Wensleydale Chs MngoPap 2X1.1KG,45410,0.1,0.12,0.11,25257,-,-
+577668,CmbeCstl Chs Wht Stln Mngo Ging 2X1.25KG,25257,0.12,0.14,0.13,45410,-,-
+872148,Coil Chunks Garlic Vac/Pkd 1X7.55KG,35613,0.33,0.41,0.37,-,-,-
+423960,Comp Blackforest Ham FS 2X4KG,45748,0.2,0.28,0.24,29410,-,-
+268753,Comp Bologna 4X1.8KG,85542,0.22,0.27,0.25,-,-,-
+732748,Comp Brie Cheese Double Cream 1X3KG,16021,0.19,0.23,0.21,26088,-,-
+594965,Comp Chckn Breast Roast Cajun Pkg 4X2KG,98930,0.19,0.23,0.21,-,-,-
+485982,Comp Cheese Asiago 16X250G,45419,0.225,0.275,0.25,-,-,-
+633742,Comp Cheese Provolone 2X2.8KG,45516,0.13,0.16,0.14,-,-,-
+454280,Comp Chicken Breast Roast Cajun 4X2KG,29521,0.22,0.26,0.24,-,-,-
+454488,Comp Chicken Breast Roast Cooked 4X2.5KG,29531,0.23,0.28,0.25,29533,-,-
+454504,Comp Chicken Breast Roast Smoked 4X2.5KG,29533,0.23,0.28,0.25,-,-,-
+266934,Comp Cooked Ham 2X5.4KG,27421,0.26,0.35,0.3,-,-,-
+848351,Comp Cooked Ham 3X3.6KG,73035,0.25,0.31,0.28,27421,-,-
+628460,Comp Corned Beef 3X2.5KG,31905,0.21,0.25,0.23,-,-,-
+206407,Comp Ham Black Forest 2X4KG,13938,0.25,0.33,0.29,45748,29410,-
+641868,Comp Honey Ham 2X4KG,67283,0.2,0.3,0.25,-,-,-
+628459,Comp Montreal Smoked Meat 3X2.5KG,63407,0.2,0.25,0.23,-,-,-
+628608,Comp Pastrami Bottom Round 3X2.5KG,63408,0.2,0.24,0.22,-,-,-
+121570,Comp Roast Beef 1X1KG FS,65875,0.19,0.23,0.21,-,-,-
+628457,Comp Roast Beef Round 3X2.5KG,31904,0.2,0.28,0.24,-,-,-
+590886,Comp Salami Genoa 2X1.2KG,48835,0.13,0.15,0.14,-,-,-
+926590,Comp Salami German Dry-Cured 2X1.5KG,73148,0.14,0.18,0.16,-,-,-
+926564,Comp Salami Hungarian Dry-Cured 2X1.5KG,71344,0.15,0.19,0.17,-,-,-
+926565,Comp Salami Peppercorn Dry-Cured 2X1.5KG,71347,0.14,0.18,0.16,-,-,-
+851191,Comp Turkey Breast Roast 4X2.5KG,71121,0.23,0.28,0.25,-,-,-
+639940,Comp Turkey Breast Roast Smoked 4X2KG,20223,0.22,0.26,0.24,-,-,-
+962212,Cows Blue Moo Chse Blue Trpl Crm 1X1.5KG,63525,0.11,0.13,0.12,-,-,-
+385572,CowsCrea Ched Smokd Appltree 18X250G,35543,0.225,0.275,0.25,-,-,-
+947896,Emma Chees Grana Padano Wedge RW 25X200G,21437,0.18,0.22,0.25,-,-,-
+947897,Emma Chees Romano Pecorino RW 25X200G,21438,0.18,0.22,0.25,-,-,-
+485250,Emma Parmigiano Reggiano 22M 10X500G,48722,0.25,0.31,0.28,28666,-,-
+872175,European Wieners Bulk 4X1KG,35851,0.24,0.3,0.27,-,-,-
+872144,European Wieners Vac/Pkd 12X375G,37155,0.35,0.43,0.39,-,-,-
+639876,Freybe Kaiser Jagdwurst 2X1.5KG,67143,0.18,0.22,0.2,-,-,-
+134035,Frico Dutch Medium Gouda 2X1X4.54KG,26173,0.31,0.37,0.34,26177,-,-
+134031,Frico Dutch Mild Gouda 2X1X4.54KG,26177,0.3,0.36,0.33,26173,-,-
+134025,Frico Dutch Smkd Gouda Prcssd 2X2.7KG,26176,0.16,0.19,0.17,16184,-,-
+134032,Frico Dutch Spiced Gouda 2X1X4.54KG,16184,0.31,0.37,0.34,26177,-,-
+728116,Grana Padano 1X4KG,26329,0.14,0.18,0.16,21437,-,-
+349402,GrimmsFF Bavarian Meatloaf 2X1.4KG,86342,0.19,0.23,0.21,-,-,-
+710129,GrimmsFF Beef Jerky Teriyaki 4X500G,68584,0.14,0.17,0.15,-,-,-
+349392,GrimmsFF Ham Classic 2X2.87KG,23621,0.2,0.24,0.22,-,-,-
+262184,Grlc Seas Cooked Roast Beef 2X3KG,11395,0.22,0.26,0.24,-,-,-
+399890,Ham Instore Maple Cured 1X1KG,46384,0.19,0.23,0.21,68154,-,-
+150761,Ham Old Fashion Shingle Pack 12X200G,35764,0.18,0.22,0.2,-,-,-
+843396,Hmstyl Turkey Breast Mediterranean 2X1KG,40477,0.18,0.22,0.2,-,-,-
+425745,HmstyRst Chckn Brst Kettle Fried 2X2.5KG,20123,0.19,0.23,0.21,20015,-,-
+425709,HmstyRst Ham Roast Black Forest 4X2.25KG,20020,0.2,0.24,0.22,29410,13938,-
+425772,HmstyRst Ham Roast Rosemary 4X2.25KG,20143,0.19,0.23,0.21,-,-,-
+425692,HmstyRst Trky Brst Kettle Fried 4X1.5KG,20015,0.19,0.23,0.21,20123,-,-
+843402,HmstyRst Turkey Breast Harissa 2X1KG,82729,0.18,0.22,0.2,-,-,-
+150773,Honey Ham Shingle Pack 12ct 1X2.4KG,45745,0.18,0.22,0.2,-,-,-
+174184,HrvtMeat Euro Hd/Chse Rll F/Grnd 2X2.5KG,35676,0.21,0.25,0.23,-,-,-
+619501,IlChestr Cheddar Applewood Smkd VS 1X1KG,68088,0.22,0.28,0.25,-,-,-
+654193,Ilchestr Chs Chddr Applwd Smkd 2X3KG,58829,0.13,0.17,0.15,-,-,-
+901557,IleDeFrn Cheese Brie Dbl Crm 1X3KG,25290,0.16,0.22,0.19,16021,26074,-
+1000242,Jarlsbrg Cheese Half Wheel 1X5KG,66293,0.19,0.23,0.21,-,-,-
+784432,Jarlsbrg Cheese Half Wheel 1X5KG,71105,0.18,0.22,0.2,26053,-,-
+131244,JMS Bung Bologna 2X2.25KG,25572,0.22,0.26,0.24,-,-,-
+1000468,Lesters Old Style Beef Round 2X2KG,17391,0.22,0.26,0.24,31904,-,-
+1002312,Lesters Pastrami 2X3.75KG,17394,0.2,0.24,0.22,63408,-,-
+164128,Lilydale Chckn Brst Rst Kentucky 2X1.8KG,46833,0.2,0.24,0.22,-,-,-
+229595,Lilydale Trky Brst Rst Montreal 2X3.23KG,25212,0.21,0.25,0.23,-,-,-
+229579,Lilydale Turkey Brst Roast O/R 2X3.302KG,25211,0.2,0.24,0.22,-,-,-
+143055,Lilydale Turkey Brst Rst Mesquite 2X4KG,10421,0.21,0.25,0.23,-,-,-
+872139,Lyona Sausage 2X1.71KG,26752,0.18,0.24,0.21,-,-,-
+843077,Mammen Dansh Blue Cheese Wheel 1X3.224KG,65446,0.14,0.18,0.16,-,-,-
+686483,Manchego Maese Miguel 6 Months 1X3KG,55456,0.14,0.18,0.16,-,-,-
+196442,Maple Cured In Store Roasted Ham 1X1KG,27017,0.21,0.25,0.23,-,-,-
+272472,MapleLea Ham Black Forest Nat Sel 3X2KG,75437,0.2,0.24,0.22,-,-,-
+422547,Mastro Genoa Salami Hot 4X1.2KG,85649,0.14,0.17,0.15,-,-,-
+250182,Mastro Genoa Salami O/F 4X1.2KG,85396,0.14,0.17,0.15,-,-,-
+130988,Mastro Tuscany Style Roast Ham 2X3.2KG,35751,0.2,0.24,0.22,-,-,-
+684213,McLean Roast Beef No Preservt 2X2.5KG,70095,0.18,0.22,0.2,19123,-,-
+350713,McLean Turkey Brst Tuscany Cooked 3X2KG,28418,0.19,0.23,0.21,40477,-,-
+509500,McLeanMt Ham Blk Forest Cooked 4X1.5KG,21674,0.19,0.23,0.21,29410,-,-
+528236,McLeanMt Turkey Breast Oven Rst 4X1.5KG,58224,0.19,0.23,0.21,-,-,-
+627566,MrDonair Meat Loafs 4X1.2KG,31915,0.29,0.35,0.32,-,-,-
+872467,NortCtry Ham Grlc Kielbasa Vc/Pkd 1X350G,36980,0.3,0.36,0.33,-,-,-
+132262,Oka Cheese 1X2.5KG,45965,0.14,0.18,0.16,67587,-,-
+183815,Oka Cheese L'Artisan 1X4.5KG,67587,0.16,0.2,0.18,45965,-,-
+595884,Panache Angus Roast Beef 4X2KG,19123,0.19,0.23,0.21,-,-,-
+653776,Panache Chicken Oven Roasted 4X2KG,78937,0.21,0.25,0.23,-,-,-
+653801,Panache Chicken Oven Rstd Sriracha 4X2KG,78940,0.22,0.26,0.24,-,-,-
+573752,Panache Ham Old Style Smoked 2X2.7KG,39363,0.2,0.24,0.22,20020,-,-
+569491,Panache Ham Smoked Black Forest 4X2KG,29410,0.21,0.25,0.23,13938,20625,-
+655669,Panache Ham Sugarbush Maple 4X2KG,68154,0.22,0.26,0.24,67283,68154,-
+803552,Panache Turkey BreastRst Southwest 4X2KG,71104,0.21,0.25,0.23,-,-,-
+653035,Panache Turkey Oven Roasted 8X1KG,20534,0.207,0.253,0.23,70080,70087,-
+653774,Panache Turkey Oven Rst Honey Mpl 4X2KG,20551,0.21,0.25,0.23,70080,20534,-
+653770,Panache Turkey Oven Rst Ppcorn Spc 4X2KG,70087,0.21,0.25,0.23,70080,20534,-
+653762,Panache Turkey Oven Rstd Buffalo 4X2KG,70086,0.21,0.25,0.23,20534,-,-
+653758,Panache Turkey Rstd SundrdTom&Bsl 4X2KG,70080,0.21,0.25,0.23,20534,70087,70086
+566832,Panache Wdg Parmigiano Reggiano 25X200G,28666,0.18,0.22,0.25,-,-,-
+619499,Parmigiano Reggiano 24Mth VS 1X1KG,68085,0.36,0.44,0.4,71167,-,-
+151119,Pepperoni Shingle Pack 12Ct 1X3.3KG,45698,0.22,0.26,0.24,23963,-,-
+131160,Piller Cervelat Salami 2X1.5KG,65644,0.14,0.18,0.16,65647,-,-
+131162,Piller German Salami 2X1.339KG,15662,0.16,0.2,0.18,65647,-,-
+130813,Piller Hungarian Salami 2X1.5KG,65647,0.16,0.2,0.18,15662,-,-
+137474,Piller Pepperseed Salami 2X1.5KG,65657,0.14,0.18,0.16,-,-,-
+81646,Pillers Old Forest Salami 1X2.7KG,15650,0.14,0.18,0.16,20967,-,-
+150739,Pizza Shingle Pack 12ct 1X2.88KG,23963,0.21,0.25,0.23,-,-,-
+1001880,Regiano Parmesan 1/8 Wheel 1X4.5KG,26331,0.16,0.19,0.18,-,71167,28666
+872203,Sausage Turkey Beer 2X1.57KG,37480,0.19,0.23,0.21,-,-,-
+397810,Schneidr Capicollo Hot 2X1.5KG,21731,0.17,0.21,0.19,25649,65644,-
+766659,Schneidr Half Ham Old Fashioned 4X2.4KG,20625,0.2,0.25,0.22,-,-,-
+133930,Schneidr Ham & Bacon Loaf 2X2.5KG,15630,0.18,0.22,0.2,-,-,-
+425784,Schneidr Ham Pepper 4X2.4KG,20283,0.2,0.24,0.22,-,-,-
+812125,Schneidr Sausage Jumbo Summer 4X1.75KG,20967,0.17,0.21,0.19,15650,-,-
+81375,Schneidr Summer Sausage Bag 2X1.5KG,25649,0.17,0.21,0.19,-,-,-
+487629,Sensatns Salami Peppered 2X830G,56087,0.15,0.19,0.17,-,-,-
+416750,Sikorski Sausage Garlic 2X2.5KG,58298,0.24,0.3,0.27,-,-,-
+422541,SnDaniel Mortadella OF No10 1X4.6KG,73896,0.19,0.23,0.21,85542,-,-
+492883,StAgur Cheese 1X2.3KG,53619,0.1,0.125,0.11,65272,-,-
+176818,Swtzrlnd Cheese Emmental Kng Cut 1X6.5KG,26284,0.18,0.22,0.2,60426,-,-
+453086,Swtzrlnd Cheese Swiss Gruyere 1X2.5KG,26053,0.144,0.176,0.16,26284,-,-
+695508,Swtzrlnd Langruti Cheese Gruyere 2X2.3KG,60426,0.14,0.18,0.16,26284,-,-

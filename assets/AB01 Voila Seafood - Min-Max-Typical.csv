@@ -1,0 +1,79 @@
+Article,Article Description,PLU,Min Weight(g),Max Weight(g),Target Weight(g),Sub PLU 1,Sub PLU 2,Sub PLU 3
+360769,Atl Salmon and Shrimp Roast 1X1KG,19016,0.26,0.35,0.31,-,-,-
+861357,Atl Salmon Shrimp Im Crab Roast 1X1KG,19439,0.31,0.39,0.35,-,-,-
+151808,Atlantic Salmon Steak Fresh 1X1KG,19124,0.28,0.34,0.31,-,-,-
+224290,Basa Fillets Previously Frozen 1X1KG,18184,0.24,0.3,0.27,-,-,-
+416145,Chilean Shrimp Hand Pld Prv Frzn 1X1KG,58502,0.13,0.18,0.16,-,-,-
+653591,Dill Atlantic Salmon Fillet 1X1KG,68361,0.22,0.26,0.24,39108,46177,58831
+567972,Fish Heads & Bones 1X1KG,19561,0.58,0.7,0.64,-,-,-
+149026,Fresh Atlantic Salmon Fillet 1X1KG,39108,0.24,0.3,0.27,68361,-,-
+151382,Fresh Pacific Rockfish Fillets 1X1KG,18817,0.113,0.454,0.26,18859,-,-
+149007,Fresh Pickerel Fillets 1X1KG,39581,0.113,0.454,0.25,-,-,-
+567888,Fresh Salmon Pink Whole 1X22.67KG,18630,0.77,0.94,0.85,-,-,-
+5910,Fresh Sole Fillets 1X1KG,18859,0.113,0.454,0.23,18817,-,-
+941045,FS OW Kut Salmon Atlantic Fillets 1X1KG,38679,0.53,0.65,0.59,39108,68221,-
+968541,FS Trout Steelhead Fillets 1X1KG,58397,0.46,0.56,0.51,18726,19018,-
+871744,Halibut Pieces Tail Fresh 1X1KG,28891,0.19,0.23,0.21,-,-,-
+583721,Herb&Garlic Atlantic Salmon Fillet 1X1KG,48791,0.12,0.32,0.22,19018,-,-
+342259,Highlinr Sole Almd Crust w Lmn 1X4.54KG,39034,0.124,0.16,0.142,18066,82547,-
+350735,Honey Dijon Atl Salmon Fillet 1X1KG,28421,0.22,0.26,0.24,28425,-,-
+633966,Honey Garlic Atl Salmon Fillet 1X1KG,46177,0.16,0.36,0.26,28421,-,-
+871522,Imitation Crab Meat 1X1KG,28336,0.1,0.3,0.2,-,-,-
+887858,King Crab Clusters Southern 1X9.07KG,88428,0.45,0.55,0.5,-,-,-
+350742,Maple Chipolte Atl Salmon Fillet 1X1KG,28425,0.22,0.26,0.24,28421,58831,-
+2854,Market Lobster Cooked 1X13.6KG,19308,0.76,0.92,0.84,-,-,-
+605045,OW Cod Fillets Fathom Icelandic 1X4.54KG,48769,0.31,0.42,0.37,-,-,-
+149028,OW Cod Fillets Pacific Fresh 1X4.5KG,18374,0.24,0.44,0.34,19037,-,-
+511973,OW Comp Imitation Crab Flkes Bulk 5X907G,29556,0.113,0.454,0.27,-,-,-
+871572,OW Cooked Shrimpmeat Prev Frozen 1X1KG,28838,0.113,0.25,0.2,-,-,-
+371936,OW Fresh Black Cod Fillet 1X1KG,28119,0.25,0.34,0.29,19037,-,-
+454858,OW Fresh Halibut Fillets 1X1KG,18319,0.16,0.22,0.19,19037,28119,-
+454820,OW Fresh Halibut Steaks 1X1KG,28314,0.2,0.4,0.3,99150,-,-
+495986,OW Fresh Mussels 1ct 1X1KG,38210,0.51,0.63,0.57,-,-,-
+149040,OW Fresh Rainbow Trout 1X1KG,38876,0.42,0.52,0.47,19018,-,-
+569909,OW Fresh Salmon Coho Fillets 1X1KG,18622,0.31,0.37,0.34,39108,-,-
+138796,OW Fresh Steelhead Trout Fillet 1X1KG,19018,0.29,0.35,0.32,68155,38876,-
+151763,OW Fresh Wild Sockeye Salmon Steak 1X1KG,28615,0.19,0.23,0.21,68155,-,-
+361373,OW Frsh Cod Fillets Lg Icelandic 1X1KG,19037,0.23,0.29,0.26,48769,-,-
+563435,OW Frsh Wld Sockeye Salmon Fillet 1X1KG,18646,0.31,0.37,0.34,39108,-,-
+595465,OW Halibut Fillets Fresh 1X1KG,99150,0.113,0.454,0.24,28314,-,-
+871745,OW Halibut Piece Fresh 1X1KG,28343,0.19,0.23,0.21,-,-,-
+595914,OW Halibut Steak Fresh 1X1KG,29131,0.2,0.4,0.3,-,-,-
+388159,OW Kuterra Fresh Atl Salmon Fillet 1X1KG,28697,0.32,0.4,0.36,39108,68155,-
+151400,OW Live Manilla Clams 1X1KG,19217,0.5,0.62,0.56,-,-,-
+716902,OW Poke Ahi Hurricane Sriracha 1X1KG,55536,0.13,0.15,0.14,48499,-,-
+716903,OW Poke Ahi Miso Sesame 1X1KG,55537,0.13,0.15,0.14,48499,-,-
+716904,OW Poke Ahi Soy Sesame 1X1KG,55538,0.2,0.24,0.22,48499,-,-
+905765,OW Poke Albacore Hurrican Sriracha 1X1KG,48499,0.15,0.19,0.17,55538,-,-
+832340,OW Prawn Tails Local Frsh Wld 1X1KG,38804,0.24,0.3,0.27,-,-,-
+884853,OW Salmon Sockeye Wild Stk PrevFzn 1X1KG,38086,0.21,0.29,0.25,68155,19018,-
+840960,OW Scallops 10/20 13.61X1KG,28199,0.23,0.29,0.26,-,-,-
+567951,OW Scallops 10/20 Fresh 1X3.63KG,19409,0.18,0.24,0.21,-,-,-
+604270,OW Sea Scallops 10-20 Bulk 1X4.54KG,39401,0.3,0.36,0.33,-,-,-
+463619,OW Sea Scallp Prem Jmbo 10-20ct PF 1X1KG,38056,0.26,0.32,0.29,-,-,-
+276364,OW SeaDlght Tuna Steak 1X4.54KG,18363,0.29,0.39,0.34,-,-,-
+412916,OW SeaDlght Tuna Steak Frozen 1X1KG,21789,0.17,0.28,0.25,18363,-,-
+651588,OW Smk Sockeye Salmon Maple Nugget 1X1KG,38569,0.12,0.14,0.13,-,-,-
+651590,OW Smkd Sockeye Salmon Chunk Pep 1X1KG,38570,0.14,0.17,0.15,-,-,-
+153326,OW Trid Salmon Sockeye Fillet PF 1X1KG,19120,0.27,0.33,0.3,68155,-,-
+945307,OW TridSeaF Salmon Sockeye 1X11.34KG,21395,0.3,1,0.54,-,-,-
+961055,OW TruNorth Scallops Medall IQF 1X4.54KG,58495,0.25,0.31,0.28,-,-,-
+175340,OW Wild Halibut Fillets Prev Fzn 1X1KG,28311,0.22,0.3,0.26,-,-,-
+138763,OW Wild Whole Sockeye Salmon 1X22.68KG,18642,0.18,0.38,0.28,19120,-,-
+831617,OW Wld Lox Trim Smoked Prev/Frzn 1X1KG,1000,0.114,0.172,0.14,-,-,-
+613440,OW Wld Sockeye Slmn Fillet PrevFzn 1X1KG,68155,0.113,0.454,0.27,19120,-,-
+908050,Panko Halibut Burger 1X1KG,48384,0.22,0.26,0.24,18066,-,-
+550756,Rst Pepper Atlantic Salmon Fillet 1X1KG,58831,0.22,0.26,0.24,-,-,-
+572007,Salmon Fillets Wild Spring PF 1X1KG,68221,0.22,0.3,0.26,-,-,-
+871819,Salmon Smoked BBQ Tips Chum 1X4.54KG,28801,0.14,0.17,0.16,-,-,-
+304426,SeaDlght Mahi Fillet 1-3 1X4.54KG,99059,0.08,0.28,0.18,-,-,-
+572023,SeaDlght Mahi Mahi Fillet Frozen 1X1KG,68220,0.454,1.362,0.91,-,-,-
+693245,Shrimp Cooked Prev Frozen 31/40 CT 1X1KG,29527,0.102,0.138,0.12,-,-,-
+651586,Smoked Atlantic Salmon Candy Nug 1X1KG,38567,0.114,0.172,0.14,-,-,-
+620598,Snow Crab Clstrs Frzn 5/8oz 1X13.6KG,38381,0.45,0.55,0.5,-,-,-
+6142,Steelhead Trout Fillets Farmed 1X1KG,18726,0.32,0.4,0.36,-,-,-
+961728,Stuffed Mushroom Cap Crab&Shrimp 1X1KG,88161,0.23,0.28,0.25,-,-,-
+672208,Stuffed Mushroom Caps Crab 1X1KG,40250,0.18,0.25,0.22,48499,-,-
+835005,Tilapia Flts C/Nut Crstd Pr/Fzn 1X4.54KG,82547,0.15,0.184,0.15,18066,-,-
+667396,UpprCrst Potato Crusted Cod 1X4.54KG,18066,0.119,0.147,0.133,82547,-,-
+706268,VS Frsh Altantic Salmon Flt Skn On 1X1KG,21892,0.82,1,0.91,19018,-,-
