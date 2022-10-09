@@ -371,7 +371,7 @@ function generateBakeryReport() {
     //Table Header
     html += '<thead><tr>\r\n';
     for (var key in Object.keys(JSON[0])) {
-        if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+        if (desiredBakeryColumns.includes(Object.keys(JSON[0])[key])) {
             html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
         }
     }
@@ -395,7 +395,7 @@ function generateBakeryReport() {
             html += '<tr>\r\n';
 
             for (var item in JSON[obj]) {
-                if (desiredColumns.includes(item)) {
+                if (desiredBakeryColumns.includes(item)) {
                     html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
             }
