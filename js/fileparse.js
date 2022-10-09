@@ -4,6 +4,7 @@ var seafood_PLU_Data;
 var produce_PLU_Data;
 var deli_PLU_Data;
 var desiredColumns = ["Description", "Ordered Qty"];
+var desiredBakeryColumns = ["Description", "Ordered Qty", "Shipment"];
 
 $(window).on('load', function(){
     //File Upload and Read
@@ -284,7 +285,8 @@ function generateProduceReport() {
         if (JSON[obj]["Pick location"].includes(["90-C"])
             && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
                 || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
-            )) {
+                || JSON[obj]["Pick location"].includes(["Prepared Fruits and Vegetables"])
+            ) {
             //Get PLU for current item
             var PLU;
             for (var item in produce_PLU_Data) {
