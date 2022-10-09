@@ -286,7 +286,7 @@ function generateProduceReport() {
             && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
                 || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
                 || JSON[obj]["Pick location"].includes(["Prepared Fruits and Vegetables"])
-            ) {
+            )) {
             //Get PLU for current item
             var PLU;
             for (var item in produce_PLU_Data) {
