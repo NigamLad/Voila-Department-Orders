@@ -395,9 +395,10 @@ function generateBakeryReport() {
             html += '<tr>\r\n';
 
             for (var item in JSON[obj]) {
-                if (desiredBakeryColumns.includes(item)) {
+                if(item == "Shipment")
+                    html += '<td>' + JSON[obj][item].slice(0,5) + '</td>\r\n';
+                else
                     html += '<td>' + JSON[obj][item] + '</td>\r\n';
-                }
             }
             //html += '<td>' + PLU + '</td>\r\n';
             html += '<td id = "checkBox"></td>\r\n';
