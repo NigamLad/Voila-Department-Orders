@@ -158,7 +158,8 @@ function readCSV(file) {
             $('#allData').css("display", "block");
             generateMeatReport();
             generateSeafoodReport();
-            generateProduceReport();
+            generateWeightedProduceReport();
+            generateEachProduceReport();
             generateDeliReport();
             generateBakeryReport();
             generateSushiReport();
@@ -265,7 +266,7 @@ function generateSeafoodReport() {
     }
 }
 
-function generateProduceReport() {
+function generateWeightedProduceReport() {
     var html = '';
     var empty = true;
 
