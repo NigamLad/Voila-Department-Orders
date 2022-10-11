@@ -338,19 +338,12 @@ function generateEachProduceReport() {
                 || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
                 || JSON[obj]["Pick location"].includes(["Value Added Prod"])
             )) {
-            //Get Barcode for current item
-            var Barcode;
-//             for (var item in produce_PLU_Data) {
-//                 if (produce_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
-//                     PLU = produce_PLU_Data[item].PLU;
-//                 }
-//             }
 
             html += '<tr>\r\n';
             for (var item in JSON[obj]) {
                 if (desiredEachProduceColumns.includes(item)) {
-                    if(item == 'Barcodes')    
-                        html += '<td>' + JSON[obj][item].split(",")[0] + '</td>\r\n';
+                    if(item == 'Barcodes')
+                        html += '<td><svg class="barcode-' + JSON[obj][item].split(",")[0] + '"></svg></td>\r\n';
                     else
                         html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
@@ -365,6 +358,23 @@ function generateEachProduceReport() {
     if (!empty) {
         $('#eachProduceTable').html(html);
         $('#eachProduce').css("display", "block");
+        for (var obj in JSON) {
+            if (JSON[obj]["Pick location"].includes(["60-L"])
+            && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
+                || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
+                || JSON[obj]["Pick location"].includes(["Value Added Prod"])
+            )) {
+                for (var item in JSON[obj]) {
+                    if (desiredEachProduceColumns.includes(item)) {
+                        if(item == 'Barcodes'){
+                            var code = ".barcode-" + JSON[obj][item].split(",")[0]
+                            console.log(code)
+                            JsBarcode(code, JSON[obj][item].split(",")[0], {format: "upc"})
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
