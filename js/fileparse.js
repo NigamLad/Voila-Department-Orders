@@ -5,6 +5,7 @@ var produce_PLU_Data;
 var deli_PLU_Data;
 var desiredColumns = ["Description", "Ordered Qty"];
 var desiredBakeryColumns = ["Description", "Ordered Qty", "Shipment"];
+var desiredEachProduceColumns = ["Description", "Ordered Qty", "Barcodes"];
 
 $(window).on('load', function(){
     //File Upload and Read
@@ -323,11 +324,11 @@ function generateEachProduceReport() {
     //Table Header
     html += '<thead><tr>\r\n';
     for (var key in Object.keys(JSON[0])) {
-        if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+        if (desiredEachProduceColumns.includes(Object.keys(JSON[0])[key])) {
             html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
         }
     }
-    html += '<td>PLU</td>\r\n';
+    html += '<td>Barcode</td>\r\n';
     html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
@@ -338,22 +339,22 @@ function generateEachProduceReport() {
                 || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
                 || JSON[obj]["Pick location"].includes(["Value Added Prod"])
             )) {
-            //Get PLU for current item
-            var PLU;
-            for (var item in produce_PLU_Data) {
-                if (produce_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
-                    PLU = produce_PLU_Data[item].PLU;
-                }
-            }
+            //Get Barcode for current item
+            var Barcode;
+//             for (var item in produce_PLU_Data) {
+//                 if (produce_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
+//                     PLU = produce_PLU_Data[item].PLU;
+//                 }
+//             }
 
             html += '<tr>\r\n';
             for (var item in JSON[obj]) {
-                if (desiredColumns.includes(item)) {
+                if (desiredEachProduceColumns.includes(item)) {
                     html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
             }
 
-            html += '<td>' + PLU + '</td>\r\n';
+            html += '<td>' + 'BarcodeNum' + '</td>\r\n';
             html += '<td id = "checkBox"></td>\r\n';
             html += '</tr>\r\n';
             empty = false;
