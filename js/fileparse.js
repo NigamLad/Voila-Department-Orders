@@ -328,7 +328,6 @@ function generateEachProduceReport() {
             html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
         }
     }
-    html += '<td>Barcode</td>\r\n';
     html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
@@ -350,11 +349,13 @@ function generateEachProduceReport() {
             html += '<tr>\r\n';
             for (var item in JSON[obj]) {
                 if (desiredEachProduceColumns.includes(item)) {
-                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                    if(item == 'Barcodes')    
+                        html += '<td>' + JSON[obj][item].split(",")[0] + '</td>\r\n';
+                    else
+                        html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
             }
-
-            html += '<td>' + 'BarcodeNum' + '</td>\r\n';
+            
             html += '<td id = "checkBox"></td>\r\n';
             html += '</tr>\r\n';
             empty = false;
