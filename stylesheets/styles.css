@@ -155,7 +155,7 @@ td {
     #inputArea, #dataPreview, header {
         display: none;
     }
-    #meat, #seafood, #produce, #deli, #bakery, #sushi, #invoice {
+    #meat, #seafood, #weightedProduce, #eachProduce, #deli, #bakery, #sushi, #invoice {
         page-break-after: always;
     }
 
