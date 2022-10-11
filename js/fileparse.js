@@ -159,7 +159,7 @@ function readCSV(file) {
             generateMeatReport();
             generateSeafoodReport();
             generateWeightedProduceReport();
-            // generateEachProduceReport();
+            generateEachProduceReport();
             generateDeliReport();
             generateBakeryReport();
             generateSushiReport();
@@ -311,8 +311,58 @@ function generateWeightedProduceReport() {
     }
 
     if (!empty) {
-        $('#produceTable').html(html);
-        $('#produce').css("display", "block");
+        $('#weightedProduceTable').html(html);
+        $('#weightedProduce').css("display", "block");
+    }
+}
+
+function generateEachProduceReport() {
+    var html = '';
+    var empty = true;
+
+    //Table Header
+    html += '<thead><tr>\r\n';
+    for (var key in Object.keys(JSON[0])) {
+        if (desiredColumns.includes(Object.keys(JSON[0])[key])) {
+            html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
+        }
+    }
+    html += '<td>PLU</td>\r\n';
+    html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
+    html += '</tr></thead>\r\n';
+    //Table Content
+    for (var obj in JSON) {
+        //Only display Produce Department pick orders
+        if (JSON[obj]["Pick location"].includes(["60-L"])
+            && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
+                || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
+                || JSON[obj]["Pick location"].includes(["Value Added Prod"])
+            )) {
+            //Get PLU for current item
+            var PLU;
+            for (var item in produce_PLU_Data) {
+                if (produce_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
+                    PLU = produce_PLU_Data[item].PLU;
+                }
+            }
+
+            html += '<tr>\r\n';
+            for (var item in JSON[obj]) {
+                if (desiredColumns.includes(item)) {
+                    html += '<td>' + JSON[obj][item] + '</td>\r\n';
+                }
+            }
+
+            html += '<td>' + PLU + '</td>\r\n';
+            html += '<td id = "checkBox"></td>\r\n';
+            html += '</tr>\r\n';
+            empty = false;
+        }
+    }
+
+    if (!empty) {
+        $('#eachProduceTable').html(html);
+        $('#eachProduce').css("display", "block");
     }
 }
 
