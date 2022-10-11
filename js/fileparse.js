@@ -159,7 +159,7 @@ function readCSV(file) {
             generateMeatReport();
             generateSeafoodReport();
             generateWeightedProduceReport();
-            generateEachProduceReport();
+            // generateEachProduceReport();
             generateDeliReport();
             generateBakeryReport();
             generateSushiReport();
