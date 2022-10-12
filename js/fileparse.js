@@ -342,9 +342,15 @@ function generateEachProduceReport() {
             html += '<tr>\r\n';
             for (var item in JSON[obj]) {
                 if (desiredEachProduceColumns.includes(item)) {
-                    if(item == 'Barcodes')
-                        html += '<td><svg class="barcode-' + JSON[obj][item].split(",")[0] + '"></svg></td>\r\n';
-                    else
+                    if(item == 'Barcodes'){
+                        var barcodes = JSON[obj][item].split(", ");
+                        for(var x = 0; x < barcodes.length; x++){
+                            if(barcodes[x].length == 12){
+                                html += '<td><svg class="barcode-' + barcodes[x] + '"></svg></td>\r\n';
+                                break;
+                            }
+                        }
+                    } else
                         html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
             }
@@ -367,9 +373,13 @@ function generateEachProduceReport() {
                 for (var item in JSON[obj]) {
                     if (desiredEachProduceColumns.includes(item)) {
                         if(item == 'Barcodes'){
-                            var code = ".barcode-" + JSON[obj][item].split(",")[0]
-                            console.log(code)
-                            JsBarcode(code, JSON[obj][item].split(",")[0], {format: "upc"})
+                            var barcodes = JSON[obj][item].split(", ");
+                            for(var x = 0; x < barcodes.length; x++){
+                                if(barcodes[x].length == 12){
+                                    JsBarcode(".barcode-" + barcodes[x], barcodes[x], {format: "upc"})
+                                    break;
+                                }
+                            }
                         }
                     }
                 }
