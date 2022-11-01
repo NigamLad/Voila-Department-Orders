@@ -191,7 +191,9 @@ function generateMeatReport() {
                 || JSON[obj]["Pick location"].includes("Fresh Beef")
                 || JSON[obj]["Pick location"].includes("Frsh Chicken/Fowl")
                 || JSON[obj]["Pick location"].includes("Meat Processed")
-                || JSON[obj]["Pick location"].includes("Fresh Turkey"))
+                || JSON[obj]["Pick location"].includes("Fresh Turkey")
+                || JSON[obj]["Pick location"].includes("Fresh Lamb")
+            )
         ) {
             //Get PLU for current item
             var PLU;
@@ -405,9 +407,10 @@ function generateDeliReport() {
     //Table Content
     for (var obj in JSON) {
         //Only display Deli Department pick orders
-        if (JSON[obj]["Pick location"].includes(["90-C"]) &&
-            (JSON[obj]["Pick location"].includes(["Deli"])
-            )) {
+        if ((JSON[obj]["Pick location"].includes(["90-C"]) && (
+                JSON[obj]["Pick location"].includes(["Deli"])
+            )) || (JSON[obj]["Pick location"].includes(["Chilled Entrees"]))
+            ) {
             //Get PLU for current item
             var PLU;
             for (var item in deli_PLU_Data) {
@@ -455,8 +458,10 @@ function generateBakeryReport() {
     for (var obj in JSON) {
         //Only display Bakery Department pick orders
         if (JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Brd and Rolls"])
-         || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Croissant"])
-         || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Swt Treats"])) {
+             || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Croissant"])
+             || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Swt Treats"])
+             || JSON[obj]["Pick location"].includes(["00-C-00-00-Instore Bakery Brd and Rolls"])
+            ) {
             // //Get PLU for current item
             // var PLU;
             // for (var item in deli_PLU_Data) {
