@@ -335,7 +335,7 @@ function generateEachProduceReport() {
     //Table Content
     for (var obj in JSON) {
         //Only display Produce Department pick orders
-        if (JSON[obj]["Pick location"].includes(["60-L"])
+        if ((JSON[obj]["Pick location"].includes(["60-L"]) || JSON[obj]["Pick location"].includes(["00-C"]))
             && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
                 || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
                 || JSON[obj]["Pick location"].includes(["Value Added Prod"])
@@ -367,7 +367,7 @@ function generateEachProduceReport() {
         $('#eachProduceTable').html(html);
         $('#eachProduce').css("display", "block");
         for (var obj in JSON) {
-            if (JSON[obj]["Pick location"].includes(["60-L"])
+            if ((JSON[obj]["Pick location"].includes(["60-L"]) || JSON[obj]["Pick location"].includes(["00-C"]))
             && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
                 || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
                 || JSON[obj]["Pick location"].includes(["Value Added Prod"])
