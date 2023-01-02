@@ -122,7 +122,7 @@ $(window).on('load', function(){
         url: "/Voila-Department-Orders/assets/ISB Breads and Rolls Store Scale Book West.csv",
         dataType: "text",
         success: function (data) {
-            bakery_PLU_Data_PLU_Data = $.csv.toObjects(data);
+            bakery_PLU_Data = $.csv.toObjects(data);
         },
         error: function () {
             $.ajax({
