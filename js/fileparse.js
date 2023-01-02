@@ -3,6 +3,7 @@ var meat_PLU_Data;
 var seafood_PLU_Data;
 var produce_PLU_Data;
 var deli_PLU_Data;
+var bakery_PLU_Data;
 var desiredColumns = ["Description", "Ordered Qty"];
 var desiredBakeryColumns = ["Description", "Ordered Qty", "Shipment"];
 var desiredEachProduceColumns = ["Description", "Ordered Qty", "Barcodes"];
@@ -112,6 +113,24 @@ $(window).on('load', function(){
                 dataType: "text",
                 success: function (data) {
                     deli_PLU_Data = $.csv.toObjects(data);
+                }
+            });
+        }
+    });
+    $.ajax({
+        type: "GET",
+        url: "/Voila-Department-Orders/assets/ISB Breads and Rolls Store Scale Book West.csv",
+        dataType: "text",
+        success: function (data) {
+            bakery_PLU_Data_PLU_Data = $.csv.toObjects(data);
+        },
+        error: function () {
+            $.ajax({
+                type: "GET",
+                url: "assets/ISB Breads and Rolls Store Scale Book West.csv",
+                dataType: "text",
+                success: function (data) {
+                    bakery_PLU_Data = $.csv.toObjects(data);
                 }
             });
         }
