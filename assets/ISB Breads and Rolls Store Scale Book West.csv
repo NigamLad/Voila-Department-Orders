@@ -1,4 +1,4 @@
-ARTICLE,PLU,DESCRIPTION
+Article,PLU,Description
 391919,10402,Cinn Buns Gourmet w/CrmChs 2Pk 1X375G
 391922,10403,Cinnamon Buns Gourmet 2Pk 1X345G
 262146,14586,Cinn Buns Gourmet w/CrmChs 4Pk 1X750G
@@ -11,12 +11,12 @@ ARTICLE,PLU,DESCRIPTION
 988055,71793,Cookie White Choc Mac 12pk 1x370g
 988062,71794,Cookie Butter Toffee 12pk 1x370g
 988063,71795,Cookie Peanut Butter 12pk 1x370g
-310988,49937,Cookie Bttr Toffee Crunch 12Pk 1X450G 
-1002528,67809,Cookie Choc Chip Cookies 12Pk 1X450G 
-1002525,67806,Cookie Monster Cookies 12Pk 1X450G   
+310988,49937,Cookie Bttr Toffee Crunch 12Pk 1X450GÂ 
+1002528,67809,Cookie Choc Chip Cookies 12Pk 1X450GÂ 
+1002525,67806,Cookie Monster Cookies 12Pk 1X450GÂ Â Â 
 691544,12416,Cookie Oatmeal Choc Chip 12PK 1X450G
-1002536,79753,Cookie Oatmeal Raisin 12PK 1X450G       
-1002527,79751,Cookies Peanut Butter 12Pk 1X450G  
+1002536,79753,Cookie Oatmeal Raisin 12PK 1X450GÂ Â Â Â Â Â Â 
+1002527,79751,Cookies Peanut Butter 12Pk 1X450GÂ Â 
 908880,22225,Cookies White Choc Mac Nut 12Pk 1X450G
 1000223,27972,Date Turnover Cookies 6Pk 1X380G
 265675,14619,Cookies All Butter Wht Chc Cran Shrtbrd 8Pk 1X250g
@@ -74,7 +74,7 @@ ARTICLE,PLU,DESCRIPTION
 355366,68898,Trad British Scone Blueberry 4pk 1X400G
 355365,68897,Trad British Scone Raisin 4pk 1X400G
 986498,72652,Scones Raisin All Butter 4Pk 1X340G
-986771 ,71723,Scones Cheddar Cheese AllBtr 4Pk 1X340G
+986771Â ,71723,Scones Cheddar Cheese AllBtr 4Pk 1X340G
 986486,72644,Scones Cinnamon All Butter 4Pk 1X340G
 986504,72671,Scones Blueberry All Butter 4Pk 1X340G
 328571,53343,Donut Apple Fritter 4Pk 1X275G
