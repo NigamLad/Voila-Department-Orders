@@ -470,7 +470,7 @@ function generateBakeryReport() {
             html += '<td>' + Object.keys(JSON[0])[key] + '</td>\r\n';
         }
     }
-    //html += '<td>PLU</td>\r\n';
+    html += '<td>PLU</td>\r\n';
     html += '<td><img src="/Voila-Department-Orders/assets/checkbox-icon.png" width="15" height="15"></td>\r\n';
     html += '</tr></thead>\r\n';
     //Table Content
@@ -481,13 +481,13 @@ function generateBakeryReport() {
              || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Swt Treats"])
              || JSON[obj]["Pick location"].includes(["00-C-00-00-Instore Bakery Brd and Rolls"])
             ) {
-            // //Get PLU for current item
-            // var PLU;
-            // for (var item in deli_PLU_Data) {
-            //     if (deli_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
-            //         PLU = deli_PLU_Data[item].PLU;
-            //     }
-            // }
+            //Get PLU for current item
+            var PLU;
+            for (var item in bakery_PLU_Data) {
+                if (bakery_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
+                    PLU = bakery_PLU_Data[item].PLU;
+                }
+            }
 
             html += '<tr>\r\n';
 
@@ -499,7 +499,7 @@ function generateBakeryReport() {
                         html += '<td>' + JSON[obj][item] + '</td>\r\n';
                 }
             }
-            //html += '<td>' + PLU + '</td>\r\n';
+            html += '<td>' + PLU + '</td>\r\n';
             html += '<td id = "checkBox"></td>\r\n';
             html += '</tr>\r\n';
 
