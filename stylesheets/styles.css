@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI';
     font-size: 24px;
     margin: 0;
-    background-color: #e5e1db;
+    background-color: #e6e7ee;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,8 +17,8 @@ header {
     padding-top: 0.5em;
     padding-bottom: 1em;
     padding-left: 0.5em;
-    ;
-    background-color: #a6a090;
+    background-color: #e7e7ee;
+    box-shadow: 0px -1px 8px #000000;
 }
 
 .navbar {
@@ -49,7 +49,15 @@ a:visited {
 }
 
 #inputArea {
+    padding:5px;
+    width:90%;
+    margin:auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     padding-left: 1em;
+    box-shadow: inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #ffffff;
+    border: solid 1px #d1d9e6;
+    border-radius: 0.55rem;
 }
 
 #fileInput {
