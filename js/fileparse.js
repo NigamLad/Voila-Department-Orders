@@ -480,12 +480,18 @@ function generateBakeryReport() {
              || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Croissant"])
              || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Swt Treats"])
              || JSON[obj]["Pick location"].includes(["00-C-00-00-Instore Bakery Brd and Rolls"])
+             || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Brd & Rolls"])
+             || JSON[obj]["Pick location"].includes(["65-R-00-00-Instore Bakery Brd & Rolls"])
+             || JSON[obj]["Pick location"].includes(["65-L-00-00-Instore Bakery Cakes"])
             ) {
             //Get PLU for current item
             var PLU;
             for (var item in bakery_PLU_Data) {
                 if (bakery_PLU_Data[item].Article == JSON[obj]["Product"].slice(0, JSON[obj]["Product"].length - 2)) {
                     PLU = bakery_PLU_Data[item].PLU;
+                    break;
+                } else {
+                    PLU = 'None';
                 }
             }
 
