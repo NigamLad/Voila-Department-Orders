@@ -389,7 +389,7 @@ function generateEachProduceReport() {
             if ((JSON[obj]["Pick location"].includes(["60-L"]) || JSON[obj]["Pick location"].includes(["00-C"]))
             && (JSON[obj]["Pick location"].includes(["Fresh Fruit"])
                 || JSON[obj]["Pick location"].includes(["Fresh Vegetables"])
-                || JSON[obj]["Pick location"].includes(["Value Added Prod"])
+                // || JSON[obj]["Pick location"].includes(["Value Added Prod"])
             )) {
                 for (var item in JSON[obj]) {
                     if (desiredEachProduceColumns.includes(item)) {
