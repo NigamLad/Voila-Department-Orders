@@ -428,7 +428,8 @@ function generateDeliReport() {
         //Only display Deli Department pick orders
         if ((JSON[obj]["Pick location"].includes(["90-C"]) && (
                 JSON[obj]["Pick location"].includes(["Deli"])
-            )) || (JSON[obj]["Pick location"].includes(["Chilled Entrees"]))
+            || (JSON[obj]["Pick location"].includes(["Chilled Entrees"]))
+            ))
             ) {
             //Get PLU for current item
             var PLU;
